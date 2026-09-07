@@ -1,0 +1,6 @@
+.local/
+*.ps1
+*.py
+tests/
+AGENTS.md
+Fair-Duelist.zip

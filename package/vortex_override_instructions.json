@@ -1,0 +1,108 @@
+[
+  {
+    "type": "attribute",
+    "key": "customFileName",
+    "value": "Fair Duelist"
+  },
+  {
+    "type": "attribute",
+    "key": "version",
+    "value": "Unreleased"
+  },
+  {
+    "type": "attribute",
+    "key": "description",
+    "value": "Duelist with Fair enemy damage and combat stamina costs."
+  },
+  {
+    "type": "attribute",
+    "source": "mod.manifest",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "README.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "LICENSE.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "CHANGELOG.md",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "RELEASE-NOTES.md",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Data\\Fair-Duelist-PACKAGE-LAYOUT.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+    ]
+  }
+]
