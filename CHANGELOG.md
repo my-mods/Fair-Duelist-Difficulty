@@ -1,5 +1,7 @@
 # Unreleased
 
+- Explain INI multipliers with commented Fair, Challenging, Story and Duelist examples.
+
 - Make INI multipliers relative to original Duelist, preserving the current default balance and converting legacy settings.
 - Fix valid INI settings incorrectly disabling runtime overrides.
 
