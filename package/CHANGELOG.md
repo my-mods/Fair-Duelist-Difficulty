@@ -1,3 +1,8 @@
+# Unreleased
+
+- Reduce Fair Duelist enemy health from 90% to 75% of Fair for shorter fights.
+- Update preset and RPG descriptions to state the 25% health reduction.
+
 # 1.0.0
 
 - Initial Nexus release, combining the development changes.

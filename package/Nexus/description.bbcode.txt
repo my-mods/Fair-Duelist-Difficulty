@@ -1,12 +1,12 @@
 [b]Fair Duelist Difficulty[/b]
 
-Keep Duelist's short, deadly fights while giving yourself more room for mistakes. This mod keeps Duelist enemy health, aggression and action settings, but uses Fair enemy damage and combat stamina costs.
+Keep Duelist's short, deadly fights while giving yourself more room for mistakes. This mod uses 25% less enemy health than Fair, keeps Duelist aggression and action settings, but uses Fair enemy damage and combat stamina costs.
 
 The existing Duelist option is renamed [b]Fair Duelist[/b]. This replaces that preset; it does not add a fifth difficulty.
 
 [b]What changes[/b]
 [list]
-[*]Enemy health stays at Duelist: 90% of Fair.
+[*]Enemy health is 75% of Fair: a 25% reduction.
 [*]Enemy damage becomes Fair: 100%, instead of Duelist's 160%.
 [*]Your combat stamina costs become Fair: 100%, instead of Duelist's 175%.
 [*]Enemy aggression, attack speed and parry timing retain Duelist settings.

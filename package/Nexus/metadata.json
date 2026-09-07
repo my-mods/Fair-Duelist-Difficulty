@@ -1,7 +1,7 @@
 {
   "name": "Fair Duelist Difficulty",
   "version": "1.0.0",
-  "summary": "Keep Duelist's lower enemy health and aggressive combat, with Fair enemy damage and combat stamina costs. Renames the existing Duelist option to Fair Duelist. No UE4SS required.",
+  "summary": "Shorter, deadly fights with 25% less enemy health than Fair, Duelist aggression, and Fair enemy damage and combat stamina costs. Renames Duelist to Fair Duelist. No UE4SS required.",
   "game": "The Blood of Dawnwalker",
   "gameDomain": "thebloodofdawnwalker",
   "category": "Gameplay",
@@ -18,7 +18,7 @@
     "filename": "Fair-Duelist.zip",
     "version": "1.0.0",
     "category": "main",
-    "description": "Duelist balance with Fair enemy damage and combat stamina costs, including renamed menu options and corrected descriptions. Select Fair Duelist. No UE4SS required.",
+    "description": "25% less enemy health than Fair, with Fair enemy damage and combat stamina costs. Includes renamed menu options and updated descriptions. Select Fair Duelist. No UE4SS required.",
     "allowModManagerDownload": true,
     "primaryModManagerDownload": true
   },
