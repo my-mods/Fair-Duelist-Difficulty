@@ -25,14 +25,15 @@ Original difficulty data belongs to Rebel Wolves and its respective rights holde
 ## INI configuration
 
 The INI feature requires UE4SS with ExecuteInGameThreadWithDelay support (develop build 97b7e501c or compatible). [UE4SS downloads](https://github.com/UE4SS-RE/RE-UE4SS/releases).
-After the first launch, edit `%LOCALAPPDATA%/Dawnwalker/Saved/Config/Windows/FairDuelist.ini`, then restart the game and load your save. Keep RPG Difficulty on Fair Duelist. Values are multipliers relative to Fair:
+After the first launch, edit `%LOCALAPPDATA%/Dawnwalker/Saved/Config/Windows/FairDuelist.ini`, then restart the game and load your save. Keep RPG Difficulty on Fair Duelist. Values are multipliers relative to original Duelist:
 
 ```ini
 [FairDuelist]
+referenceDifficulty=Duelist
 enabled=true
-enemyHealthMultiplier=0.75
-enemyDamageMultiplier=1.0
-staminaCostMultiplier=1.0
+enemyHealthMultiplier=0.833333333333
+enemyDamageMultiplier=0.625
+staminaCostMultiplier=0.571428571429
 debugLogging=false
 ```
 
@@ -41,3 +42,7 @@ Each multiplier accepts 0.1 through 5.0. Lower health shortens fights; lower ene
 The tooltips describe the packaged default of 25% less health; personal INI values take precedence. Set `debugLogging=true` for setup values and failures in `Dawnwalker/Binaries/Win64/ue4ss/UE4SS.log`. If the personal INI could not be created, copy the packaged `FairDuelist.defaults.ini` there as `FairDuelist.ini`.
 
 The mod ships a defaults template and creates the personal INI only when missing. To restore the packaged balance, disable INI overrides. To remove the entire mod, disable it through Vortex and deploy.
+
+A multiplier of 1.0 means original Duelist. Defaults preserve the existing balance: 75% of Fair enemy health, Fair damage and Fair stamina costs. For 25% less health than original Duelist, use enemyHealthMultiplier=0.75 (67.5% of Fair health).
+
+Existing INIs without referenceDifficulty use the old Fair reference and are converted while retaining their effective settings. Migration replaces the INI after saving the complete original as FairDuelist.ini.fair-reference.bak; comments remain in that backup. Back up personal preferences before updating. If migration cannot write safely, the old file stays supported using its Fair reference. Do not manually add the new marker without converting the old numbers.

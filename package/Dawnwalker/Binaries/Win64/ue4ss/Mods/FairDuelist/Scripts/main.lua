@@ -4,6 +4,7 @@ local Config = dofile(dir .. 'Config.lua')
 local cfg, path = Config.load(dir)
 local function log(message) if cfg.debugLogging then print('[FairDuelist] ' .. message .. '\n') end end
 if not cfg.enabled then return end
+local game = Config.gameValues(cfg)
 local assetPath = '/Game/_Dawnwalker/Combat/DA_DifficultyConfig.DA_DifficultyConfig'
 local pending, attempts, applied, candidate, active = false, 0, nil, nil, false
 local lastError, started, searches, writes = nil, 0, 0, 0
@@ -23,12 +24,12 @@ local function apply()
     local old = {row.HealthMultiplier, row.DamageMultiplier, row.PlayerCombatStaminaCostsMultiplier}
     for _, value in ipairs(old) do assert(type(value) == 'number', 'Unexpected difficulty schema') end
     local ok, err = pcall(function()
-        row.HealthMultiplier = cfg.enemyHealthMultiplier
-        row.DamageMultiplier = cfg.enemyDamageMultiplier
-        row.PlayerCombatStaminaCostsMultiplier = cfg.staminaCostMultiplier
-        assert(math.abs(row.HealthMultiplier - cfg.enemyHealthMultiplier) < 0.00001, 'Health write failed')
-        assert(math.abs(row.DamageMultiplier - cfg.enemyDamageMultiplier) < 0.00001, 'Damage write failed')
-        assert(math.abs(row.PlayerCombatStaminaCostsMultiplier - cfg.staminaCostMultiplier) < 0.00001, 'Stamina write failed')
+        row.HealthMultiplier = game.enemyHealthMultiplier
+        row.DamageMultiplier = game.enemyDamageMultiplier
+        row.PlayerCombatStaminaCostsMultiplier = game.staminaCostMultiplier
+        assert(math.abs(row.HealthMultiplier - game.enemyHealthMultiplier) < 0.00001, 'Health write failed')
+        assert(math.abs(row.DamageMultiplier - game.enemyDamageMultiplier) < 0.00001, 'Damage write failed')
+        assert(math.abs(row.PlayerCombatStaminaCostsMultiplier - game.staminaCostMultiplier) < 0.00001, 'Stamina write failed')
     end)
     if not ok then
         row.HealthMultiplier, row.DamageMultiplier, row.PlayerCombatStaminaCostsMultiplier = table.unpack(old)
@@ -36,7 +37,7 @@ local function apply()
     end
     applied, candidate = object, nil
     writes = writes + 3
-    if cfg.debugLogging then log(string.format('Applied health=%.3f damage=%.3f stamina=%.3f; searches=%d writes=%d elapsed=%.3fs; INI=%s', cfg.enemyHealthMultiplier, cfg.enemyDamageMultiplier, cfg.staminaCostMultiplier, searches, writes, os.clock()-started, path)) end
+    if cfg.debugLogging then log(string.format('Applied Duelist-relative health=%.3f damage=%.3f stamina=%.3f; searches=%d writes=%d elapsed=%.3fs; INI=%s', cfg.enemyHealthMultiplier, cfg.enemyDamageMultiplier, cfg.staminaCostMultiplier, searches, writes, os.clock()-started, path)) end
     return true
 end
 schedule = function()

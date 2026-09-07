@@ -1,5 +1,8 @@
 # Unreleased
 
+- Make INI multipliers relative to original Duelist, preserving the current default balance and converting legacy settings.
+- Fix valid INI settings incorrectly disabling runtime overrides.
+
 - Add startup INI configuration for enemy health, enemy damage and combat stamina costs through UE4SS.
 
 - Reduce Fair Duelist enemy health from 90% to 75% of Fair for shorter fights.
