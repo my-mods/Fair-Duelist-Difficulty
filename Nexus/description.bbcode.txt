@@ -46,9 +46,6 @@ Affected assets:
 [/list]
 Difficulty overhauls and mods replacing these menu string tables can conflict, even when their archive filenames differ.
 
-[b]Testing and limitations[/b]
-Built from the installed game files examined on 7 September 2026. Cooked-asset integrity, asset round trips, archive contents and Vortex 2.6.3 installation planning have passed. Full in-game verification, the final tooltip in every language, and achievement eligibility remain unverified. Recheck compatibility after game updates.
-
 [b]Credits and source[/b]
 Original game and difficulty data: Rebel Wolves and the respective rights holders. Balance choices and mod: oOCamilleOo. This is an unofficial mod.
 [url=https://github.com/my-mods/Fair-Duelist-Difficulty]Source repository[/url]
