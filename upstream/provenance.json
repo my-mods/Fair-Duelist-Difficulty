@@ -3,5 +3,15 @@
   "game": "The Blood of Dawnwalker",
   "retrieved": "2026-09-07",
   "sourceSha256": "546cba9568e43bbb96d8e741c2b58dc899c1914d28229b41a36b8c26ca4b07c2",
-  "nativeExecutableSha256": "7ad7d09645b0589dc0ff78b53aa1a7b18eca79b1b7f888b403ab41d88ac7e853"
+  "nativeExecutableSha256": "7ad7d09645b0589dc0ff78b53aa1a7b18eca79b1b7f888b403ab41d88ac7e853",
+  "stringTables": {
+    "ST_Difficulties": {
+      "sourceSha256": "b9dbab5c3b388b951a4938393e0cf5510cf819b4a72dc9b0575ff8de33fe2cc8",
+      "retrieved": "2026-09-07"
+    },
+    "ST_Settings_Tab_Game": {
+      "sourceSha256": "11c6b3b8af6c5f8b497c3f0e203989408fd962ad60d9fb6cc223595425a94d0a",
+      "retrieved": "2026-09-07"
+    }
+  }
 }

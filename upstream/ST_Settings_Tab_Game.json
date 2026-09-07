@@ -1,0 +1,269 @@
+{
+  "$type": "UAssetAPI.UAsset, UAssetAPI",
+  "Info": "Serialized with UAssetAPI v2.0.0x (3228c1e)",
+  "NameMap": [
+    "ST_Settings_Tab_Game",
+    "/Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game",
+    "/Script/CoreUObject",
+    "Package",
+    "/Script/Engine",
+    "Class",
+    "StringTable",
+    "Default__StringTable"
+  ],
+  "CustomSerializationFlags": "None",
+  "UseSeparateBulkDataFiles": true,
+  "IsUnversioned": true,
+  "FileVersionLicenseeUE": 0,
+  "GameSpecificOverride": "None",
+  "ObjectVersion": "VER_UE4_CORRECT_LICENSEE_FLAG",
+  "ObjectVersionUE5": "ASSETREGISTRY_PACKAGEBUILDDEPENDENCIES",
+  "CustomVersionContainer": [
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{375EC13C-06E4-48FB-B500-84F0262A717E}",
+      "FriendlyName": "FCoreObjectVersion",
+      "Version": 4,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{E4B068ED-F494-42E9-A231-DA0B2E46BB41}",
+      "FriendlyName": "FEditorObjectVersion",
+      "Version": 40,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{CFFC743F-43B0-4480-9391-14DF171D2073}",
+      "FriendlyName": "FFrameworkObjectVersion",
+      "Version": 37,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{7B5AE74C-D270-4C10-A958-57980B212A5A}",
+      "FriendlyName": "FSequencerObjectVersion",
+      "Version": 13,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{29E575DD-E0A3-4627-9D10-D276232CDCEA}",
+      "FriendlyName": "FAnimPhysObjectVersion",
+      "Version": 17,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{601D1886-AC64-4F84-AA16-D3DE0DEAC7D6}",
+      "FriendlyName": "FFortniteMainBranchObjectVersion",
+      "Version": 170,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC}",
+      "FriendlyName": "FNiagaraObjectVersion",
+      "Version": 1,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{717F9EE7-E9B0-493A-88B3-91321B388107}",
+      "FriendlyName": "FAssetRegistryVersion",
+      "Version": 17,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{9C54D522-A826-4FBE-9421-074661B482D0}",
+      "FriendlyName": "FReleaseObjectVersion",
+      "Version": 44,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{E7086368-6B23-4C58-8439-1B7016265E91}",
+      "FriendlyName": "FFortniteReleaseBranchCustomObjectVersion",
+      "Version": 15,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{D89B5E42-24BD-4D46-8412-ACA8DF641779}",
+      "FriendlyName": "FUE5ReleaseStreamObjectVersion",
+      "Version": 51,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{FCF57AFA-5076-4283-B9A9-E658FFA02D32}",
+      "FriendlyName": "FNiagaraCustomVersion",
+      "Version": 90,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{59DA5D52-1232-4948-B878-597870B8E98B}",
+      "FriendlyName": "FUE5SpecialProjectStreamObjectVersion",
+      "Version": 8,
+      "IsSerialized": false
+    },
+    {
+      "$type": "UAssetAPI.CustomVersion, UAssetAPI",
+      "Name": null,
+      "Key": "{E21E1CAA-AF47-425E-89BF-6AD44C44A8BB}",
+      "FriendlyName": "FInstancedStructCustomVersion",
+      "Version": 1,
+      "IsSerialized": false
+    }
+  ],
+  "SoftObjectPathList": [],
+  "GatherableTextData": null,
+  "Exports": [
+    {
+      "$type": "UAssetAPI.ExportTypes.RawExport, UAssetAPI",
+      "Data": "AAMBAAAAABUAAABTVF9TZXR0aW5nc19UYWJfR2FtZQAuAAAAGAAAAE9wdGlvbl9EaWZmaWN1bHR5UHJlc2V0ABIAAABEaWZmaWN1bHR5IFByZXNldAAPAQAAQ2hvb3NlIHRoZSBkaWZmaWN1bHR5IHByZXNldC4KCgpTdG9yeTogRm9yIHRob3NlIHdobyB3YW50IHRvIGZvY3VzIG9uIGV4cGVyaWVuY2luZyB0aGUgZ2FtZSdzIHN0b3J5LgoKTm9ybWFsOiBBIGZhaXIgZGlmZmljdWx0eSB0aGF0IHNob3VsZCBzdWl0IG1vc3QgcGxheWVycy4KCkltbWVyc2l2ZTogQSBtb2RlIGZvY3VzZWQgb24gYmVsaWV2YWJsZSwgZGVhZGx5IGNvbWJhdC4KCk5pZ2h0bWFyZTogRm9yIHRob3NlIHdobyBzZWVrIHRoZSBncmVhdGVzdCBjaGFsbGVuZ2UuACQAAABPcHRpb25fRGlmZmljdWx0eVByZXNldF9EZXNjcmlwdGlvbgDB/f//QwBoAG8AbwBzAGUAIAB0AGgAZQAgAGcAYQBtAGUAJwBzACAAZABpAGYAZgBpAGMAdQBsAHQAeQAgAHAAcgBlAHMAZQB0AC4AIAAKACAACgBTAHQAbwByAHkAOgAgAGEAbgAgAGkAbQBtAGUAcgBzAGkAdgBlACAAcwB0AG8AcgB5ACAAZQB4AHAAZQByAGkAZQBuAGMAZQAgAHcAaQB0AGgAIABsAGUAcwBzACAAYwBoAGEAbABsAGUAbgBnAGkAbgBnACAAYwBvAG0AYgBhAHQALgAKABMgIABFAG4AZQBtAGkAZQBzACAAYQByAGUAIAB3AGUAYQBrAGUAcgAgAGEAbgBkACAAcwBsAG8AdwBlAHIALgAgAEMAbwBlAG4AIABoAGEAcwAgAG0AbwByAGUAIABzAHQAYQBtAGkAbgBhAC4ACgAgAAoARgBhAGkAcgA6ACAAYQAgAGIAYQBsAGEAbgBjAGUAZAAgAGUAeABwAGUAcgBpAGUAbgBjAGUAIAB3AGkAdABoACAAZgBhAGkAcgAgAGcAYQBtAGUAcABsAGEAeQAgAGMAaABhAGwAbABlAG4AZwBlAHMALgAKABMgIABBAGwAbAAgAG8AZgAgAEMAbwBlAG4AJwBzACAAYQBuAGQAIABlAG4AZQBtAGkAZQBzACcAIABzAHQAYQB0AGkAcwB0AGkAYwBzACAAYQByAGUAIABhAHQAIAB0AGgAZQBpAHIAIABkAGUAZgBhAHUAbAB0ACAAbABlAHYAZQBsAHMALgAKAAoAQwBoAGEAbABsAGUAbgBnAGkAbgBnADoAIAByAGUAYQBsAGkAcwB0AGkAYwAgAGEAbgBkACAAZABlAGEAZABsAHkALgAKABMgIABFAG4AZQBtAGkAZQBzACAAYQByAGUAIABtAG8AcgBlACAAYQBnAGcAcgBlAHMAcwBpAHYAZQAgAGEAbgBkACAAdABoAGUAeQAgAGgAaQB0ACAAaABhAHIAZABlAHIALgAgAEMAbwBlAG4AIABoAGEAcwAgAGwAZQBzAHMAIABzAHQAYQBtAGkAbgBhAC4ACgAKAEQAdQBlAGwAaQBzAHQAOgAgAHQAaABlACAAZABlAGEAZABsAGkAZQBzAHQAIABjAGgAYQBsAGwAZQBuAGcAZQAuAAoAEyAgAE4AbwAgAGQAaQByAGUAYwB0AGkAbwBuAGEAbAAgAGkAbgBkAGkAYwBhAHQAbwByAHMALgAgAEUAbgBlAG0AaQBlAHMAIABoAGEAdgBlACAAbABlAHMAcwAgAGgAZQBhAGwAdABoACwAIABiAHUAdAAgAHQAaABlAHkAIABhAHIAZQAgAGYAYQByACAAbQBvAHIAZQAgAGEAZwBnAHIAZQBzAHMAaQB2AGUAIABhAG4AZAAgAGgAaQB0ACAAbQB1AGMAaAAgAGgAYQByAGQAZQByAC4AIABDAG8AZQBuACAAaABhAHMAIABtAHUAYwBoACAAbABlAHMAcwAgAHMAdABhAG0AaQBuAGEALgAAAAAAAAAZAAAAT3B0aW9uX0V4cGxvcmF0aW9uQ2FtZXJhAB4AAABDYW1lcmEgRGlzdGFuY2UgKEV4cGxvcmF0aW9uKQAAAAAAJQAAAE9wdGlvbl9FeHBsb3JhdGlvbkNhbWVyYV9EZXNjcmlwdGlvbgAvAAAAQWRqdXN0IHRoZSBjYW1lcmEgcG9zaXRpb24gZHVyaW5nIGV4cGxvcmF0aW9uLgAAAAAAFAAAAE9wdGlvbl9Db21iYXRDYW1lcmEAGQAAAENhbWVyYSBEaXN0YW5jZSAoQ29tYmF0KQAAAAAAIAAAAE9wdGlvbl9Db21iYXRDYW1lcmFfRGVzY3JpcHRpb24AKgAAAEFkanVzdCB0aGUgY2FtZXJhIHBvc2l0aW9uIGR1cmluZyBjb21iYXQuAAAAAAARAAAAT3B0aW9uX1R1dG9yaWFscwAPAAAAU2hvdyBUdXRvcmlhbHMAAAAAAB0AAABPcHRpb25fVHV0b3JpYWxzX0Rlc2NyaXB0aW9uACUAAABFbmFibGUgb3IgZGlzYWJsZSBpbi1nYW1lIHR1dG9yaWFscy4AAAAAAB8AAABPcHRpb25fVHJhY2tlZE9iamVjdGl2ZURpc3BsYXkAHgAAAEFsd2F5cyBTaG93IFRyYWNrZWQgT2JqZWN0aXZlAHUAAABUdXJuIHRoaXMgb24gdG8gYWx3YXlzIGRpc3BsYXkgdGhlIHRyYWNrZWQgb2JqZWN0aXZlIGluIHRoZSBnYW1lIHdvcmxkLiBUaGlzIGRvZXMgbm90IGFmZmVjdCB0aGUgY29tcGFzcyBvciB0aGUgbWFwLgArAAAAT3B0aW9uX1RyYWNrZWRPYmplY3RpdmVEaXNwbGF5X0Rlc2NyaXB0aW9uAHcAAABFbmFibGUgdG8gYWx3YXlzIGhhdmUgdGhlIHRyYWNrZWQgb2JqZWN0aXZlIG9uIGRpc3BsYXkgaW4gdGhlIGdhbWUgd29ybGQuIFRoaXMgZG9lcyBub3QgYWZmZWN0IHRoZSBjb21wYXNzIG9yIHRoZSBtYXAuAAAAAAAbAAAAT3B0aW9uX01hcFNob3dVbmRpc2NvdmVyZWQAHAAAAFNob3cgVW5kaXNjb3ZlcmVkIExvY2F0aW9ucwAAAAAAJwAAAE9wdGlvbl9NYXBTaG93VW5kaXNjb3ZlcmVkX0Rlc2NyaXB0aW9uAEkAAABUb2dnbGVzIHdoZXRoZXIgdW5kaXNjb3ZlcmVkIHBsYWNlcyBhbmQgZW5jb3VudGVycyBhcmUgc2hvd24gb24gdGhlIG1hcC4AAAAAABoAAABPcHRpb25fTWFwU2hvd1F1ZXN0U3RhcnRzACYAAABTaG93IFF1ZXN0IFN0YXJ0IExvY2F0aW9ucyBvbiB0aGUgTWFwAAAAAAAmAAAAT3B0aW9uX01hcFNob3dRdWVzdFN0YXJ0c19EZXNjcmlwdGlvbgBLAAAAVG9nZ2xlIHdoZXRoZXIgbG9jYXRpb25zIHdoZXJlIHF1ZXN0cyBjYW4gYmUgc3RhcnRlZCBhcmUgc2hvd24gb24gdGhlIG1hcC4AAAAAABgAAABPcHRpb25fTWFwU2hvd01lcmNoYW50cwAYAAAAU2hvdyBNZXJjaGFudCBMb2NhdGlvbnMAAAAAACQAAABPcHRpb25fTWFwU2hvd01lcmNoYW50c19EZXNjcmlwdGlvbgA4AAAAVG9nZ2xlIHdoZXRoZXIgbWVyY2hhbnQgbG9jYXRpb25zIGFyZSBzaG93biBvbiB0aGUgbWFwLgAAAAAAFgAAAE9wdGlvbl9NYXBTaG93TmFub1BvaQAQAAAAU2hvdyBBY3Rpdml0aWVzAAAAAAAiAAAAT3B0aW9uX01hcFNob3dOYW5vUG9pX0Rlc2NyaXB0aW9uADAAAABUb2dnbGUgd2hldGhlciBhY3Rpdml0aWVzIGFyZSBzaG93biBvbiB0aGUgbWFwLgAAAAAAFgAAAE9wdGlvbl9NYXBTaG93Rmxhdm91cgAiAAAAU2hvdyBOb24tSW50ZXJhY3RhYmxlIE1hcCBNYXJrZXJzAAAAAAAiAAAAT3B0aW9uX01hcFNob3dGbGF2b3VyX0Rlc2NyaXB0aW9uAF8AAABUb2dnbGUgd2hldGhlciBub24taW50ZXJhY3RhYmxlIG1hcCBtYXJrZXJzLCBzdWNoIGFzIGdhdGVzIGFuZCB2aWxsYWdlcywgYXJlIHNob3duIG9uIHRoZSBtYXAuAAAAAAAVAAAAT3B0aW9uX1JQR0RpZmZpY3VsdHkADwAAAFJQRyBEaWZmaWN1bHR5AGQBAABDb250cm9scyB0aGUgYXR0cmlidXRlcyBvZiBDb2VuIGFuZCBoaXMgZW5lbWllcy4KCgpTdG9yeTogRW5lbWllcyBhcmUgd2Vha2VyIGFuZCBDb2VuIGhhcyBpbmNyZWFzZWQgU3RhbWluYS4KCk5vcm1hbDogRW5lbWllcyBhcmUgbW9kZXJhdGVseSBzdHJvbmcuCgpJbW1lcnNpdmU6IEVuZW1pZXMgZGVhbCBoaWdoZXIgZGFtYWdlLCBidXQgaGF2ZSBsZXNzIEhlYWx0aC4gQ29lbiBoYXMgcmVkdWNlZCBTdGFtaW5hLgoKTmlnaHRtYXJlOiBFbmVtaWVzIGRlYWwgZXh0cmVtZWx5IGhpZ2ggZGFtYWdlIGFuZCBoYXZlIHNsaWdodGx5IGluY3JlYXNlZCBIZWFsdGguIENvZW4gaGFzIGV4dHJlbWVseSBsaW1pdGVkIFN0YW1pbmEuACEAAABPcHRpb25fUlBHRGlmZmljdWx0eV9EZXNjcmlwdGlvbgCHAQAAQWRqdXN0IGVuZW15IGhlYWx0aCBhbmQgZGFtYWdlLCBhcyB3ZWxsIGFzIENvZW4ncyBzdGFtaW5hIGxldmVscy4KClN0b3J5CkVuZW1pZXMgaGF2ZSBsZXNzIGhlYWx0aCBhbmQgZGVhbCBsZXNzIGRhbWFnZS4gQ29lbiBoYXMgbW9yZSBzdGFtaW5hLgoKRmFpcgpFbmVteSBkYW1hZ2UgYW5kIGhlYWx0aCwgYXMgd2VsbCBhcyBDb2VuJ3Mgc3RhbWluYSwgYXJlIHNldCB0byB0aGVpciBkZWZhdWx0IGxldmVscy4KIApDaGFsbGVuZ2luZwpFbmVtaWVzIGRlYWwgbW9yZSBkYW1hZ2UuIENvZW4gaGFzIGxlc3Mgc3RhbWluYS4KCkR1ZWxpc3QKRW5lbWllcyBoYXZlIGxlc3MgaGVhbHRoLCBidXQgdGhleSBkZWFsIGZhciBtb3JlIGRhbWFnZS4gQ29lbiBoYXMgbXVjaCBsZXNzIHN0YW1pbmEuAAAAAAAYAAAAT3B0aW9uX0FjdGlvbkRpZmZpY3VsdHkAEgAAAEFjdGlvbiBEaWZmaWN1bHR5AH8BAABDb250cm9scyB0aGUgc3BlZWQgb2YgZW5lbXkgYXR0YWNrcyBhbmQgdGhlIGRpZmZpY3VsdHkgb2YgcGFycnlpbmcgdGhlbS4gQXQgaGlnaGVyIGRpZmZpY3VsdGllcywgY2VydGFpbiBlbmVtaWVzIGFsc28gaGF2ZSBtb3JlIGNvbXBsZXggYXR0YWNrIHBhdHRlcm5zLgoKClN0b3J5OiBBdHRhY2tzIGFyZSBzbGlnaHRseSBzbG93ZXIgYW5kIG11Y2ggZWFzaWVyIHRvIHBhcnJ5LgoKTm9ybWFsOiBBdHRhY2sgc3BlZWQgYW5kIHBhcnJ5IHdpbmRvd3MgYXJlIGJhbGFuY2VkLgoKSW1tZXJzaXZlOiBBdHRhY2tzIGFyZSBzbGlnaHRseSBzbG93ZXIgYW5kIGVhc2llciB0byBwYXJyeS4KCk5pZ2h0bWFyZTogQXR0YWNrcyBhcmUgZmFzdGVyIGFuZCBoYXJkZXIgdG8gcGFycnkuACQAAABPcHRpb25fQWN0aW9uRGlmZmljdWx0eV9EZXNjcmlwdGlvbgABAgAAQWRqdXN0IGVuZW15IGF0dGFjayBzcGVlZCBhbmQgdGhlIGRpZmZpY3VsdHkgb2YgcGVyZm9ybWluZyBwZXJmZWN0IGJsb2Nrcy4gQXQgaGlnaGVyIGRpZmZpY3VsdHkgbGV2ZWxzLCBzb21lIGVuZW1pZXMgdXNlIG1vcmUgY29tcGxleCBhdHRhY2sgcGF0dGVybnMuIAoKU3RvcnkKRW5lbXkgYXR0YWNrcyBhcmUgc2xvd2VyLiBQZXJmZWN0IGJsb2NrcyBhcmUgbXVjaCBlYXNpZXIgdG8gcGVyZm9ybS4gCgpGYWlyCkVuZW15IGF0dGFjayBzcGVlZCwgYWdncmVzc2lvbiwgYW5kIHdpbmRvd3MgZm9yIHBlcmZlY3QgYmxvY2tzIGFyZSBiYWxhbmNlZC4KCkNoYWxsZW5naW5nCkVuZW1pZXMgYXJlIG1vcmUgYWdncmVzc2l2ZSBhbmQgYXR0YWNrIGZhc3Rlci4gUGVyZmVjdCBibG9ja3MgYXJlIGhhcmRlciB0byBwZXJmb3JtLgoKRHVlbGlzdApFbmVtaWVzIGF0dGFjayBmYXN0ZXIgYW5kIGFyZSBmYXIgbW9yZSBhZ2dyZXNzaXZlLiBQZXJmZWN0IGJsb2NrcyBhcmUgbXVjaCBoYXJkZXIgdG8gcGVyZm9ybS4AAAAAABEAAABPcHRpb25fQXV0b0Jsb2NrAAsAAABBdXRvLUJsb2NrAAAAAAAdAAAAT3B0aW9uX0F1dG9CbG9ja19EZXNjcmlwdGlvbgDLAAAAQ2hvb3NlIGhvdyB0aGUgZ2FtZSBoYW5kbGVzIGJsb2NraW5nIGluIHRoZSB3cm9uZyBkaXJlY3Rpb24uDQoNCk9uOiBCbG9ja2luZyBpbiB0aGUgd3JvbmcgZGlyZWN0aW9uIHN0aWxsIHN1Y2NlZWRzLCBidXQgY29uc3VtZXMgc3RhbWluYS4gDQoNCk9mZjogQmxvY2tpbmcgaW4gdGhlIHdyb25nIGRpcmVjdGlvbiByZXN1bHRzIGluIGdldHRpbmcgaGl0LgChAAAAT246IEF0dGVtcHRpbmcgdG8gYmxvY2sgaW4gdGhlIHdyb25nIGRpcmVjdGlvbiByZXN1bHRzIGluIGEgYmxvY2sgdGhhdCBjb25zdW1lcyBzdGFtaW5hLgpPZmY6IEF0dGVtcHRpbmcgdG8gYmxvY2sgaW4gdGhlIHdyb25nIGRpcmVjdGlvbiByZXN1bHRzIGluIGdldHRpbmcgaGl0LgAeAAAAT3B0aW9uX0NvbWJhdERpcmVjdGlvbk1hcmtlcnMAFgAAAERpcmVjdGlvbmFsIEluZGljYXRvcgCLAAAAT246IFRoZSBkaXJlY3Rpb25zIG9mIGVuZW15IGF0dGFja3MgYXJlIGRpc3BsYXllZCBvbiB0aGUgSFVELgpPZmY6IFRoZSBkaXJlY3Rpb25zIG9mIGVuZW15IGF0dGFja3MgYXJlIG9ubHkgc2lnbmFsbGVkIGJ5IHRoZWlyIGFuaW1hdGlvbnMuACoAAABPcHRpb25fQ29tYmF0RGlyZWN0aW9uTWFya2Vyc19EZXNjcmlwdGlvbgDDAAAAQ2hvb3NlIGhvdyBlbmVteSBhdHRhY2tzIGFyZSBpbmRpY2F0ZWQuDQoNCk9uOiBUaGUgZGlyZWN0aW9uIG9mIGVuZW15IGF0dGFja3MgaXMgc2hvd24gd2l0aCBhbiBvbi1zY3JlZW4gaW5kaWNhdG9yLiANCg0KT2ZmOiBUaGUgZGlyZWN0aW9uIG9mIGVuZW15IGF0dGFja3MgaXMgaW5kaWNhdGVkIG9ubHkgYnkgZW5lbXkgYW5pbWF0aW9ucy4AAAAAAC0AAABPcHRpb25fQWxsb3dJbnZlbnRvcnlDb25zdW1wdGlvbkR1cmluZ0NvbWJhdAApAAAAVXNlIENvbnN1bWFibGVzIGZyb20gSW52ZW50b3J5IGluIENvbWJhdACUAAAAT246IEFueSBjb25zdW1hYmxlIGl0ZW1zIGZyb20gdGhlIGludmVudG9yeSBjYW4gYmUgdXNlZCBkdXJpbmcgY29tYmF0LgpPZmY6IE9ubHkgdGhlIGNvbnN1bWFibGUgaXRlbXMgdGhhdCB3ZXJlIHByZXBhcmVkIGJlZm9yZSBjb21iYXQgY2FuIGJlIHVzZWQuADkAAABPcHRpb25fQWxsb3dJbnZlbnRvcnlDb25zdW1wdGlvbkR1cmluZ0NvbWJhdF9EZXNjcmlwdGlvbgDKAAAAQ2hvb3NlIGhvdyBjb25zdW1hYmxlcyBjYW4gYmUgdXNlZCBpbiBjb21iYXQuDQoNCk9uOiBBbnkgY29uc3VtYWJsZSBpdGVtIGluIHRoZSBpbnZlbnRvcnkgY2FuIGJlIHVzZWQgZHVyaW5nIGNvbWJhdC4gDQoNCk9mZjogT25seSB0aGUgY29uc3VtYWJsZSBpdGVtcyBlcXVpcHBlZCBpbiBxdWlja3Nsb3RzIGNhbiBiZSB1c2VkIGR1cmluZyBjb21iYXQuAAAAAAAjAAAAT3B0aW9uX0FjY2Vzc2liaWxpdHlfU2hvd0ZpbmlzaGVycwARAAAAQ29tYmF0IEZpbmlzaGVycwAAAAAALwAAAE9wdGlvbl9BY2Nlc3NpYmlsaXR5X1Nob3dGaW5pc2hlcnNfRGVzY3JpcHRpb24ALgAAAEVuYWJsZSBvciBkaXNhYmxlIGNvbWJhdCBmaW5pc2hlciBhbmltYXRpb25zLgAAAAAAHQAAAFNlcGFyYXRvcl9TdWJjYXRlZ29yeV9Db21iYXQABwAAAENvbWJhdAATAAAAc3ViY2F0ZWdvcnkgaGVhZGVyAB0AAABTZXBhcmF0b3JfU3ViY2F0ZWdvcnlfQ2FtZXJhAAcAAABDYW1lcmEAEwAAAHN1YmNhdGVnb3J5IGhlYWRlcgAfAAAAU2VwYXJhdG9yX1N1YmNhdGVnb3J5X0dhbWVwbGF5AAkAAABHYW1lcGxheQATAAAAc3ViY2F0ZWdvcnkgaGVhZGVyABoAAABTZXBhcmF0b3JfU3ViY2F0ZWdvcnlfTWFwAAQAAABNYXAAEwAAAHN1YmNhdGVnb3J5IGhlYWRlcgAcAAAAT3B0aW9uX1Nob3dEYW1hZ2VJbmRpY2F0b3JzABcAAABTaG93IERhbWFnZSBJbmRpY2F0b3JzABsAAABudW1iZXJzIG9uIGhpdHRpbmcgZW5lbWllcwAoAAAAT3B0aW9uX1Nob3dEYW1hZ2VJbmRpY2F0b3JzX0Rlc2NyaXB0aW9uAEgAAABUb2dnbGVzIHdoZXRoZXIgZGFtYWdlIGRlYWx0IGJ5IENvZW4gaXMgZGlzcGxheWVkIGFzIG51bWJlcnMgb24gc2NyZWVuLgAbAAAAbnVtYmVycyBvbiBoaXR0aW5nIGVuZW1pZXMAFQAAAE9wdGlvbl9JbnN0YW50Q29tYm9zABgAAABJbnN0YW50IFNwZWNpYWwgQXR0YWNrcwAAAAAAIQAAAE9wdGlvbl9JbnN0YW50Q29tYm9zX0Rlc2NyaXB0aW9uANoAAABDaG9vc2UgaG93IFdlYXBvbiBBcnRzIGFuZCBDbGF3IEFydHMgYXJlIHBlcmZvcm1lZC4NCg0KT246IFByZXNzIHRoZSBBdHRhY2sgYW5kIEJsb2NrIGJ1dHRvbnMgYXQgdGhlIHNhbWUgdGltZS4NCg0KT2ZmOiBDaG9vc2UgdGhlIGNvcnJlY3QgYXR0YWNrIGRpcmVjdGlvbiB3aGlsZSBwcmVzc2luZyB0aGUgQXR0YWNrIGFuZCBCbG9jayBidXR0b25zIGF0IHRoZSBzYW1lIHRpbWUuAAAAAAAeAAAAT3B0aW9uX1Nsb3dNb3Rpb25XaGVuQmxvY2tpbmcAHgAAAFNsb3cgTW90aW9uIG9uIFBlcmZlY3QgQmxvY2tzAAAAAAAqAAAAT3B0aW9uX1Nsb3dNb3Rpb25XaGVuQmxvY2tpbmdfRGVzY3JpcHRpb24ANgAAAENob29zZSB3aGV0aGVyIHRpbWUgc2xvd3MgZG93biBhZnRlciBhIFBlcmZlY3QgQmxvY2suAAAAAAAiAAAAT3B0aW9uX1RpbWVDb3N0UHJveGltaXR5SW5kaWNhdG9yADAAAABUaW1lLVByb2dyZXNzaW5nIEFjdGl2aXRpZXMgUHJveGltaXR5IEluZGljYXRvcgAAAAAALgAAAE9wdGlvbl9UaW1lQ29zdFByb3hpbWl0eUluZGljYXRvcl9EZXNjcmlwdGlvbgBiAAAAVG9nZ2xlcyB3aGV0aGVyIHRoZSBnYW1lIHdpbGwgd2FybiB5b3UgaWYgeW91IGFyZSBhYm91dCB0byB3YWxrIGludG8gYSB0aW1lLXByb2dyZXNzaW5nIGFjdGl2aXR5LgAAAAAAFAAAAE9wdGlvbl9DYW1lcmFTaGFrZXMADgAAAENhbWVyYSBTaGFrZXMATwAAAENob29zZSB3aGV0aGVyIHRoZSBjYW1lcmEgd2lsbCBzaGFrZSBkdXJpbmcgY2VydGFpbiBnYW1lcGxheSBzaXR1YXRpb25zIG9yIG5vdAAgAAAAT3B0aW9uX0NhbWVyYVNoYWtlc19EZXNjcmlwdGlvbgBQAAAAQ2hvb3NlIHdoZXRoZXIgdGhlIGNhbWVyYSB3aWxsIHNoYWtlIGR1cmluZyBjZXJ0YWluIGdhbWVwbGF5IHNpdHVhdGlvbnMgb3Igbm90LgAAAAAAAAAAAA==",
+      "ObjectName": "ST_Settings_Tab_Game",
+      "OuterIndex": 0,
+      "ClassIndex": -1,
+      "SuperIndex": 0,
+      "TemplateIndex": -3,
+      "ObjectFlags": "RF_Public, RF_Standalone, RF_Transactional",
+      "SerialSize": 8191,
+      "SerialOffset": 701,
+      "ScriptSerializationStartOffset": 0,
+      "ScriptSerializationEndOffset": 0,
+      "bForcedExport": false,
+      "bNotForClient": false,
+      "bNotForServer": false,
+      "PackageGuid": "{00000000-0000-0000-0000-000000000000}",
+      "IsInheritedInstance": false,
+      "PackageFlags": "PKG_None",
+      "bNotAlwaysLoadedForEditorGame": false,
+      "bIsAsset": true,
+      "GeneratePublicHash": false,
+      "SerializationBeforeSerializationDependencies": [],
+      "CreateBeforeSerializationDependencies": [],
+      "SerializationBeforeCreateDependencies": [
+        -1,
+        -3
+      ],
+      "CreateBeforeCreateDependencies": [],
+      "Extras": ""
+    }
+  ],
+  "SearchableNames": null,
+  "ImportTypeHierarchies": null,
+  "MetaData": null,
+  "Thumbnails": null,
+  "WorldTileInfo": null,
+  "AppendedNullBytes": 0,
+  "OtherAssetsFailedToAccess": [],
+  "LegacyFileVersion": -8,
+  "DataResourceVersion": "Invalid",
+  "DataResources": null,
+  "UsesEventDrivenLoader": true,
+  "WillSerializeNameHashes": true,
+  "Imports": [
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "StringTable",
+      "OuterIndex": -2,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Class",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "/Script/Engine",
+      "OuterIndex": 0,
+      "ClassPackage": "/Script/CoreUObject",
+      "ClassName": "Package",
+      "PackageName": null,
+      "bImportOptional": false
+    },
+    {
+      "$type": "UAssetAPI.Import, UAssetAPI",
+      "ObjectName": "Default__StringTable",
+      "OuterIndex": -2,
+      "ClassPackage": "/Script/Engine",
+      "ClassName": "StringTable",
+      "PackageName": null,
+      "bImportOptional": false
+    }
+  ],
+  "DependsMap": [
+    []
+  ],
+  "SoftPackageReferenceList": null,
+  "AssetRegistryDependencyDataOffset": -1,
+  "AssetRegistryRecords": [],
+  "ImportBits": null,
+  "SoftPackageBits": null,
+  "ExtraPackageDependencies": null,
+  "BulkData": null,
+  "AdditionalFiles": "wYMqng==",
+  "Trailer": null,
+  "Generations": [
+    {
+      "$type": "UAssetAPI.FGenerationInfo, UAssetAPI",
+      "ExportCount": 1,
+      "NameCount": 8
+    }
+  ],
+  "PackageGuid": "{00000000-0000-0000-0000-000000000000}",
+  "PersistentGuid": "{00000000-0000-0000-0000-000000000000}",
+  "RecordedEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "RecordedCompatibleWithEngineVersion": {
+    "$type": "UAssetAPI.FEngineVersion, UAssetAPI",
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 0,
+    "Changelist": 0,
+    "Branch": null
+  },
+  "ChunkIDs": [],
+  "PackageSource": 0,
+  "FolderName": "/Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game",
+  "LocalizationId": null,
+  "SoftObjectPathsCount": 0,
+  "SoftObjectPathsOffset": 493,
+  "SearchableNamesOffset": 0,
+  "ThumbnailTableOffset": 0,
+  "ImportTypeHierarchiesCount": 0,
+  "ImportTypeHierarchiesOffset": 0,
+  "SavedHash": null,
+  "CompressionFlags": 0,
+  "AdditionalPackagesToCook": [],
+  "NamesReferencedFromExportDataCount": 2,
+  "PayloadTocOffset": -1,
+  "DataResourceOffset": -1,
+  "doWeHaveAssetRegistryData": true,
+  "doWeHaveWorldTileInfo": false,
+  "PackageFlags": "PKG_Cooked, PKG_UnversionedProperties, PKG_FilterEditorOnly",
+  "HasUnversionedProperties": true,
+  "IsFilterEditorOnly": true
+}
