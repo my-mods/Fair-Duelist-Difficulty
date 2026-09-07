@@ -5,3 +5,5 @@ Validated: native container integrity; exact asset data and name-map roundtrip w
 In-game validation pending: Fair Duelist selected, incoming damage and combat stamina costs match Fair while enemy health, aggression, animations and hidden indicators retain Duelist behavior. Achievement eligibility is unverified.
 
 Menu text now names the existing Duelist slot Fair Duelist. Customized settings retain the modified RPG balance while that RPG difficulty remains selected. Verify the label and descriptions in-game, including the active language.
+
+Corrected the separate Difficulty Preset description, which previously retained the original Duelist text. In-game tooltip verification remains pending.
