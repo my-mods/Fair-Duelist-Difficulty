@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mod><info><name>Fair Duelist</name><modid>FairDuelist</modid><description>Duelist with Fair enemy damage and combat stamina costs.</description><author>oOCamilleOo</author><version>Unreleased</version><created_on>2026-09-07</created_on></info><supports><game>The Blood of Dawnwalker</game><unreal_engine>5.5.4</unreal_engine></supports></mod>
+<mod><info><name>Fair Duelist Difficulty</name><modid>FairDuelist</modid><description>Duelist with Fair enemy damage and combat stamina costs.</description><author>oOCamilleOo</author><version>Unreleased</version><created_on>2026-09-07</created_on></info><supports><game>The Blood of Dawnwalker</game><unreal_engine>5.5.4</unreal_engine></supports></mod>
