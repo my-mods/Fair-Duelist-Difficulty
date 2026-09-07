@@ -1,5 +1,7 @@
 # Unreleased
 
+- Add startup INI configuration for enemy health, enemy damage and combat stamina costs through UE4SS.
+
 - Reduce Fair Duelist enemy health from 90% to 75% of Fair for shorter fights.
 - Update preset and RPG descriptions to state the 25% health reduction.
 

@@ -1,7 +1,7 @@
 {
   "name": "Fair Duelist Difficulty",
   "version": "1.0.0",
-  "summary": "Shorter, deadly fights with 25% less enemy health than Fair, Duelist aggression, and Fair enemy damage and combat stamina costs. Renames Duelist to Fair Duelist. No UE4SS required.",
+  "summary": "Configurable Fair Duelist balance: 25% less enemy health by default, Fair damage and stamina costs. Customize health, damage and stamina through an INI. UE4SS required for INI settings.",
   "game": "The Blood of Dawnwalker",
   "gameDomain": "thebloodofdawnwalker",
   "category": "Gameplay",
@@ -12,13 +12,13 @@
     "AI assisted",
     "AI Media"
   ],
-  "requiresUE4SS": false,
+  "requiresUE4SS": true,
   "file": {
     "displayName": "Fair Duelist Difficulty",
     "filename": "Fair-Duelist.zip",
     "version": "1.0.0",
     "category": "main",
-    "description": "25% less enemy health than Fair, with Fair enemy damage and combat stamina costs. Includes renamed menu options and updated descriptions. Select Fair Duelist. No UE4SS required.",
+    "description": "Fair Duelist preset with configurable health, damage and stamina multipliers. Defaults: 75% enemy health, normal damage and stamina costs. UE4SS required for INI settings.",
     "allowModManagerDownload": true,
     "primaryModManagerDownload": true
   },

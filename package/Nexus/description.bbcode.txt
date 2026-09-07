@@ -16,7 +16,7 @@ The existing Duelist option is renamed [b]Fair Duelist[/b]. This replaces that p
 Player maximum health and the other difficulty presets are unchanged.
 
 [b]Requirements[/b]
-The Blood of Dawnwalker for PC. No other mod, DLC or UE4SS loader is required.
+The Blood of Dawnwalker for PC. No DLC is required. INI configuration requires [url=https://github.com/UE4SS-RE/RE-UE4SS/releases]UE4SS[/url] develop build 97b7e501c or compatible. The packaged default preset works without UE4SS.
 For the installation steps below, use [url=https://www.nexusmods.com/site/mods/1]Vortex[/url] with its The Blood of Dawnwalker game extension.
 
 [b]Install[/b]
@@ -26,6 +26,9 @@ For the installation steps below, use [url=https://www.nexusmods.com/site/mods/1
 [*]Enable the mod, deploy through Vortex, and restart the game.
 [*]Select Fair Duelist in the game's difficulty settings.
 [/list]
+
+[b]INI configuration[/b]
+On first launch, a personal FairDuelist.ini is created in %LOCALAPPDATA%/Dawnwalker/Saved/Config/Windows. Edit enemyHealthMultiplier (default 0.75), enemyDamageMultiplier (1.0), and staminaCostMultiplier (1.0). Values are relative to Fair and accept 0.1 through 5.0. Restart the game after editing. Keep RPG Difficulty on Fair Duelist. The tooltips show packaged defaults; INI values take precedence. These settings do not change unblockable attacks.
 
 [b]Can I customize the difficulty?[/b]
 Yes. Keep [b]RPG Difficulty on Fair Duelist[/b] to preserve the modified enemy health, damage and stamina costs.
