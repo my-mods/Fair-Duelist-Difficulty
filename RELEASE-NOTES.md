@@ -1,9 +1,7 @@
-Development build; no release version assigned.
+Fair Duelist Difficulty 1.0.0
 
-Validated: native container integrity; exact asset data and name-map roundtrip with stock dependencies; two consecutive builds to Fair-Duelist.zip; archive allowlist and byte equality; installed Vortex 2.6.3 installer and metadata merge, with exactly three runtime destinations.
+First Nexus release, incorporating all development balance and menu-description fixes.
 
-In-game validation pending: Fair Duelist selected, incoming damage and combat stamina costs match Fair while enemy health, aggression, animations and hidden indicators retain Duelist behavior. Achievement eligibility is unverified.
+Validated: cooked container integrity; asset data and name-map round trips; exact ZIP allowlist and byte equality; repeated builds to the same filename; Vortex 2.6.3 installer and metadata handling.
 
-Menu text now names the existing Duelist slot Fair Duelist. Customized settings retain the modified RPG balance while that RPG difficulty remains selected. Verify the label and descriptions in-game, including the active language.
-
-Corrected the separate Difficulty Preset description, which previously retained the original Duelist text. In-game tooltip verification remains pending.
+In-game verification remains pending for damage and stamina, custom-setting combinations and final menu text across languages. Achievement eligibility is unverified.

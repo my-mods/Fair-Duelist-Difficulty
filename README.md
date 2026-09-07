@@ -17,7 +17,7 @@ Installation: import Fair-Duelist.zip into Vortex, choose the game-root installe
 Requirements: The Blood of Dawnwalker; Vortex with its Dawnwalker extension. No UE4SS dependency.
 Update: replace the same Vortex mod entry with the new archive and deploy.
 Uninstall: disable/remove this mod in Vortex and deploy; restart the game.
-Conflicts: replaces /Game/_Dawnwalker/Combat/DA_DifficultyConfig, /Game/_Dawnwalker/Combat/StringTables/ST_Difficulties, and /Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game. Text mods replacing these string tables may conflict. Use only one mod replacing that asset; Fair Duelist Difficulty must win for these values to apply. Archive filenames alone cannot detect this conflict.
+Conflicts: replaces /Game/_Dawnwalker/Combat/DA_DifficultyConfig, /Game/_Dawnwalker/Combat/StringTables/ST_Difficulties, and /Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game. Text mods replacing these string tables may conflict. Use only one mod replacing each of these assets; Fair Duelist Difficulty must win for these values to apply. Archive filenames alone cannot detect this conflict.
 Compatibility: prepared against locally installed game files on 2026-09-07. Recheck after game updates. No in-game validation yet. Achievement eligibility is unverified.
 
-Original difficulty data belongs to Rebel Wolves and its respective rights holders. This mod changes only two difficulty multipliers.
+Original difficulty data belongs to Rebel Wolves and its respective rights holders. This mod changes two difficulty multipliers and the corresponding menu text.

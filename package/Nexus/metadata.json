@@ -1,0 +1,31 @@
+{
+  "name": "Fair Duelist Difficulty",
+  "version": "1.0.0",
+  "summary": "Keep Duelist's lower enemy health and aggressive combat, with Fair enemy damage and combat stamina costs. Renames the existing Duelist option to Fair Duelist. No UE4SS required.",
+  "game": "The Blood of Dawnwalker",
+  "gameDomain": "thebloodofdawnwalker",
+  "category": "Gameplay",
+  "categoryId": 6,
+  "author": "oOCamilleOo",
+  "source": "https://github.com/my-mods/Fair-Duelist-Difficulty",
+  "tags": [
+    "AI assisted"
+  ],
+  "requiresUE4SS": false,
+  "file": {
+    "displayName": "Fair Duelist Difficulty",
+    "filename": "Fair-Duelist.zip",
+    "version": "1.0.0",
+    "category": "main",
+    "description": "Duelist balance with Fair enemy damage and combat stamina costs, including renamed menu options and corrected descriptions. Select Fair Duelist. No UE4SS required.",
+    "allowModManagerDownload": true,
+    "primaryModManagerDownload": true
+  },
+  "changelog": [
+    "Initial Nexus release, combining the development changes.",
+    "Keep Duelist enemy health, aggression, action settings and hidden directional indicators.",
+    "Use Fair enemy damage and combat stamina costs.",
+    "Rename Duelist to Fair Duelist and correct preset, RPG and Action descriptions.",
+    "Support independent customization through the existing RPG and Action settings."
+  ]
+}

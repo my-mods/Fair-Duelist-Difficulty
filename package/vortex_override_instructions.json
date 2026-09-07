@@ -7,7 +7,7 @@
   {
     "type": "attribute",
     "key": "version",
-    "value": "Unreleased"
+    "value": "1.0.0"
   },
   {
     "type": "attribute",
@@ -24,7 +24,9 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   },
   {
@@ -37,7 +39,9 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   },
   {
@@ -50,7 +54,9 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   },
   {
@@ -63,7 +69,9 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   },
   {
@@ -76,7 +84,9 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   },
   {
@@ -89,7 +99,9 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   },
   {
@@ -102,7 +114,69 @@
       "LICENSE.txt",
       "CHANGELOG.md",
       "RELEASE-NOTES.md",
-      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt"
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus/description.bbcode.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus\\description.bbcode.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus/metadata.json",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus\\metadata.json",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json"
     ]
   }
 ]
