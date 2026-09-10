@@ -1,5 +1,7 @@
 # Fair Duelist - Customizable Difficulty
 
+![Fair Duelist - Customizable Difficulty](Nexus/thumbnail.png)
+
 Modifies the existing Duelist preset in The Blood of Dawnwalker.
 Select Fair Duelist in the game's difficulty settings. This is the renamed Duelist slot, not a fifth preset.
 
