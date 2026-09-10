@@ -1,11 +1,7 @@
-# Thumbnail source
+# Promotional image source
 
-Background: official in-game screenshot from The Blood of Dawnwalker.
+The thumbnail and banner use the user-supplied reference showing a red-armored swordsman confronting a pale hooded enemy in a dark interior.
 
-[Original screenshot](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/2aeb99f7ea9968e69ea460e4c994a1ff280fb32d/ss_2aeb99f7ea9968e69ea460e4c994a1ff280fb32d.1920x1080.jpg?t=1788552059)
+The thumbnail title was updated using AI image editing. The banner is an AI-generated adaptation of that reference, exported as a 1300 × 372 JPEG. Both use the title Fair Duelist - Customizable Difficulty.
 
-Game imagery is copyright Rebel Wolves and Bandai Namco Entertainment and is not covered by this mod's MIT license.
-
-The title was updated using AI image editing on 2026-09-10. This is promotional imagery, not a demonstration of the installed mod.
-
-The accompanying banner.jpg is an AI-generated adaptation of the thumbnail composition, exported at 1300 × 372 pixels in JPEG format.
+Underlying game imagery belongs to its respective rights holders and is not covered by the mod's MIT license. These are promotional images, not demonstrations of the installed mod.
