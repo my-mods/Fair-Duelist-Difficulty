@@ -1,11 +1,7 @@
 Fair Duelist Difficulty
 
-- Added configurable enemy attack cooldown and coordination profiles.
-- Personal INI now uses Saved/Config, inherits shipped defaults, and preserves existing files and legacy preferences.
+Enemy health defaults to 75% of Fair, with Fair damage and combat stamina costs. Preset descriptions explain the 25% health reduction.
 
+Configure health, damage, stamina and enemy attack pressure relative to Story, Fair, Challenging or Duelist through a personal INI. Aggression scales helper attack cooldowns and uses the selected reference's group-attack permissions. UE4SS is required for INI overrides.
 
-Enemy health is now 75% of Fair, reduced from 90%. Enemy damage and combat stamina costs remain at Fair values. Preset and RPG descriptions now state the 25% enemy health reduction.
-
-Add INI configuration for health, damage and stamina multipliers. Defaults preserve 75% of Fair enemy health and Fair damage/stamina costs. INI overrides require UE4SS.
-
-INI multipliers now use original Duelist as their reference. Legacy Fair-relative values are converted with the same effective balance. Fixed valid INI settings incorrectly disabling runtime overrides.
+Personal settings use Saved/Config and inherit shipped defaults. The INI includes value explanations and preset examples. Legacy conversion and old-location imports have been removed. Valid INI settings now correctly enable runtime overrides.

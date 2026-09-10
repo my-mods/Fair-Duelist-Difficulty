@@ -24,7 +24,7 @@ local function apply()
     local row = object.RPGDifficulties:Find(3):get()
     local old = {row.HealthMultiplier, row.DamageMultiplier, row.PlayerCombatStaminaCostsMultiplier}
     for _, value in ipairs(old) do assert(type(value) == 'number', 'Unexpected difficulty schema') end
-    local applyAggression, restoreAggression, aggressionWrites = Aggression.prepare(object, cfg.enemyAggression)
+    local applyAggression, restoreAggression, aggressionWrites = Aggression.prepare(object, cfg.referenceDifficulty, cfg.enemyAggressionMultiplier)
     local ok, err = pcall(function()
         applyAggression()
         row.HealthMultiplier = game.enemyHealthMultiplier
@@ -41,7 +41,7 @@ local function apply()
     end
     applied, candidate = object, nil
     writes = writes + 3 + aggressionWrites
-    if cfg.debugLogging then log(string.format('Applied Duelist-relative health=%.3f damage=%.3f stamina=%.3f aggression=%s; searches=%d writes=%d elapsed=%.3fs; INI=%s', cfg.enemyHealthMultiplier, cfg.enemyDamageMultiplier, cfg.staminaCostMultiplier, cfg.enemyAggression, searches, writes, os.clock()-started, path)) end
+    if cfg.debugLogging then log(string.format('Applied %s-relative health=%.3f damage=%.3f stamina=%.3f aggression=%s; searches=%d writes=%d elapsed=%.3fs; INI=%s', cfg.referenceDifficulty, cfg.enemyHealthMultiplier, cfg.enemyDamageMultiplier, cfg.staminaCostMultiplier, cfg.enemyAggressionMultiplier, searches, writes, os.clock()-started, path)) end
     return true
 end
 schedule = function()

@@ -76,16 +76,7 @@ function M.load(directory, Config)
     local personal, errorText, code = read(path)
     if personal == nil then
         if code ~= 2 then return fail('Cannot read ' .. path .. ': ' .. tostring(errorText), path) end
-        local initial
-        for _, legacyPath in ipairs({folder .. 'Windows/FairDuelist.ini', directory .. 'FairDuelist.ini'}) do
-            local legacy, legacyError, legacyCode = read(legacyPath)
-            if legacy ~= nil then
-                local _, problems = Config.parse(legacy, defaults)
-                if #problems > 0 then return fail('Legacy INI rejected: ' .. table.concat(problems, '; '), path) end
-                initial = legacy; break -- Copy byte for byte; never modify the original.
-            elseif legacyCode ~= 2 then return fail('Cannot read legacy INI: ' .. tostring(legacyError), path) end
-        end
-        personal, errorText = createIfMissing(path, initial or personalTemplate(text))
+        personal, errorText = createIfMissing(path, personalTemplate(text))
         if personal == nil then return fail('Cannot create ' .. path .. ': ' .. tostring(errorText), path) end
     end
     local config, problems = Config.parse(personal, defaults)

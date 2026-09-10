@@ -1,18 +1,12 @@
 # Unreleased
 
-- Added configurable enemy attack cooldown and coordination profiles.
-- Personal INI now uses Saved/Config, inherits shipped defaults, and preserves existing files and legacy preferences.
-
-
-- Explain INI multipliers with commented Fair, Challenging, Story and Duelist examples.
-
-- Make INI multipliers relative to original Duelist, preserving the current default balance and converting legacy settings.
+- Reduce enemy health to 75% of Fair and update the preset descriptions.
+- Configure health, damage, stamina costs and enemy attack pressure through a personal INI.
+- Choose Story, Fair, Challenging or Duelist as the original-value reference for all multipliers.
+- Scale helper attack cooldowns numerically and use the reference's group-attack permissions.
+- Keep personal settings in Saved/Config with inherited shipped defaults and documented examples.
+- Remove legacy INI conversion and old-location imports.
 - Fix valid INI settings incorrectly disabling runtime overrides.
-
-- Add startup INI configuration for enemy health, enemy damage and combat stamina costs through UE4SS.
-
-- Reduce Fair Duelist enemy health from 90% to 75% of Fair for shorter fights.
-- Update preset and RPG descriptions to state the 25% health reduction.
 
 # 1.0.0
 

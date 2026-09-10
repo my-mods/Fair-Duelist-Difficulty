@@ -8,7 +8,7 @@ Select Fair Duelist in the game's difficulty settings. This is the renamed Dueli
 Enemy health: 75% of Fair (25% less health).
 Enemy damage: Fair (100%, reduced from Duelist 160%).
 Player combat stamina costs: Fair (100%, reduced from Duelist 175%).
-Enemy attack pressure: configurable; defaults to the selected Action preset. Animation speed, parry timing and directional indicators remain controlled by the game.
+Enemy attack pressure: configurable relative to the chosen reference; defaults to Duelist. Animation speed, parry timing and directional indicators remain controlled by the game.
 
 Customization: keep RPG Difficulty on Fair Duelist to retain your INI balance (defaults: enemy health 75%, damage 100%, and combat stamina costs 100%). Changing Action Difficulty changes attack speed, aggression and parry timing, but does not change the RPG values. Indicators, consumables and other custom options can be changed independently. The overall preset may display Custom; that alone does not remove the RPG changes. Selecting another RPG difficulty or overall preset changes the balance accordingly. For the exact intended setup, keep Action Difficulty on Fair Duelist and directional indicators off.
 Other presets and player maximum health are unchanged.
@@ -25,7 +25,7 @@ Original difficulty data belongs to Rebel Wolves and its respective rights holde
 ## INI configuration
 
 The INI feature requires UE4SS with ExecuteInGameThreadWithDelay support (develop build 97b7e501c or compatible). [UE4SS downloads](https://github.com/UE4SS-RE/RE-UE4SS/releases).
-After the first launch, edit `%LOCALAPPDATA%/Dawnwalker/Saved/Config/FairDuelist.ini`, then restart the game and load your save. Keep RPG Difficulty on Fair Duelist. Values are multipliers relative to original Duelist:
+After the first launch, edit `%LOCALAPPDATA%/Dawnwalker/Saved/Config/FairDuelist.ini`, then restart the game and load your save. Keep RPG Difficulty and Action Difficulty on Fair Duelist to apply all overrides.
 
 ```ini
 [FairDuelist]
@@ -34,20 +34,27 @@ enabled=true
 enemyHealthMultiplier=0.833333333333
 enemyDamageMultiplier=0.625
 staminaCostMultiplier=0.571428571429
-enemyAggression=game
+enemyAggressionMultiplier=1.0
 debugLogging=false
 ```
 
-Each multiplier accepts 0.1 through 5.0. Lower health shortens fights; lower enemy damage makes hits less punishing; lower stamina cost makes combat actions cheaper. Invalid settings disable INI overrides for that launch. `enabled=false` disables the INI overrides; the packaged 75% health preset remains active. The INI is read at startup. The three multipliers affect RPG balance. The aggression setting affects the Fair Duelist Action slot only.
+Choose `Story`, `Fair`, `Challenging`, or `Duelist` as `referenceDifficulty`. Every numeric multiplier uses that difficulty's original values: 1 means unchanged, 0.75 means 25% less, and 1.25 means 25% more. Changing the reference changes the meaning of all multipliers, including inherited defaults. Set all four multipliers to 1 to reproduce the reference's RPG balance and cooldown-based attack pressure. This does not select its animation speed, parry windows or other gameplay options.
 
-The tooltips describe the packaged default of 25% less health; personal INI values take precedence. Set `debugLogging=true` for setup values and failures in `Dawnwalker/Binaries/Win64/ue4ss/UE4SS.log`. If the personal INI could not be created, copy the packaged `FairDuelist.defaults.ini` there as `FairDuelist.ini`.
+| Example | Reference | Health | Damage | Stamina cost | Aggression |
+| --- | --- | --- | --- | --- | --- |
+| Fair | Fair | 1 | 1 | 1 | 1 |
+| Challenging | Challenging | 1 | 1 | 1 | 1 |
+| Story | Story | 1 | 1 | 1 | 1 |
+| Shorter Fair fights with more breathing room | Fair | 0.75 | 1 | 1 | 0.75 |
 
-The personal INI follows the same location and override rules as the other Dawnwalker mods: `%LOCALAPPDATA%/Dawnwalker/Saved/Config/FairDuelist.ini` (no Windows subfolder). On first launch, the mod creates a commented reference. Uncomment only settings you want to override; omitted/commented values inherit the shipped `FairDuelist.defaults.ini`, which is read every startup. Keep `referenceDifficulty=Duelist` active. Existing personal files are never rewritten. The personal file is outside Vortex-managed directories.
+Multipliers accept 0.1 through 5.0. Lower health shortens fights; lower damage makes enemy hits less punishing; lower stamina cost makes combat actions cheaper.
 
-`enemyAggression=game` preserves the selected Action preset. With Action Difficulty set to Fair Duelist, choose `story`, `fair`, `challenging`, or `duelist` to copy that preset's attack cooldowns and permissions for attacking while other enemies attack or react. For example, `enemyAggression=fair` combines Fair attack pressure with Duelist animation/parry settings. Other Action slots remain unchanged. This does not copy level-based AI scaling, animation speed, parry windows, boss phase mechanics, or scripted red/unblockable attacks. It cannot guarantee fewer unblockables from a boss.
+`enemyAggressionMultiplier` scales three helper attack cooldowns with `cooldown = reference cooldown / multiplier`. At 0.75, cooldowns are about 33% longer; at 1.25, they are 20% shorter. Group-attack permissions are copied from the selected reference. Actual attack frequency also depends on AI behavior, and zero cooldowns stay zero. Level-based AI scaling, animation speed, parry windows, boss phases and scripted red/unblockable attacks remain unchanged. This setting affects the Fair Duelist Action slot only; select that Action difficulty to use it.
 
-To restore inherited settings, comment out your overrides and restart. `enabled=false` disables runtime overrides while the packaged preset remains installed.
+The personal INI follows the same rules as the other Dawnwalker mods: it is outside Vortex-managed directories, in `Saved/Config` without a Windows subfolder. The mod creates a commented reference only if missing. Uncomment only settings you want to override; omitted/commented values inherit the current shipped `FairDuelist.defaults.ini`, read at startup. Existing personal files are never rewritten by the mod. Back up your preferences before manually replacing a personal INI.
 
-A multiplier of 1.0 means original Duelist. Defaults preserve the existing balance: 75% of Fair enemy health, Fair damage and Fair stamina costs. For 25% less health than original Duelist, use enemyHealthMultiplier=0.75 (67.5% of Fair health).
+There is no legacy conversion or lookup in old INI locations. The former `enemyAggression` key has been replaced by `enemyAggressionMultiplier`; remove the former key when updating an existing personal INI. A missing `referenceDifficulty` inherits the shipped default, just like other omitted settings. Invalid settings disable runtime overrides for that launch and report the problem in UE4SS.log without overwriting the file.
 
-If the new path is missing, an existing `Saved/Config/Windows/FairDuelist.ini` is copied first, or a legacy `Scripts/FairDuelist.ini` is copied if present. The source and its comments remain untouched. Existing INIs without `referenceDifficulty` retain the old Fair reference for their explicit numeric values; conversion happens only in memory. Do not add the marker to an old INI without converting its numbers. Unreadable or invalid files disable runtime overrides and report the problem in UE4SS.log without overwriting preferences.
+`enabled=false` disables all runtime overrides while leaving the packaged native preset installed. Comment out overrides to inherit defaults again. The packaged default balance remains 75% of Fair enemy health, Fair damage and Fair stamina costs; tooltips describe that packaged balance. For 25% less health than Duelist, choose Duelist as the reference and set health to 0.75.
+
+Set `debugLogging=true` for applied reference, multipliers, setup counts and failures in `Dawnwalker/Binaries/Win64/ue4ss/UE4SS.log`. The mod reads configuration once at startup and uses bounded setup retries plus map/object lifecycle events.
