@@ -1,4 +1,4 @@
-[b]Fair Duelist Difficulty[/b]
+[b]Fair Duelist - Customizable Difficulty[/b]
 
 Shorter, deadly fights with a little more room for mistakes. By default, enemies have 25% less health than Fair, deal Fair damage, and your combat actions cost Fair stamina. Enemy aggression keeps the Duelist feel.
 
@@ -51,4 +51,4 @@ Difficulty overhauls and mods replacing these menu string tables can conflict, e
 
 [b]Credits and source[/b]
 Original game and difficulty data: Rebel Wolves and the respective rights holders. Balance choices and mod: oOCamilleOo. This is an unofficial mod.
-[url=https://github.com/my-mods/Fair-Duelist-Difficulty]Source repository[/url]
+[url=https://github.com/my-mods/Fair-Duelist-Customizable-Difficulty]Source repository[/url]
