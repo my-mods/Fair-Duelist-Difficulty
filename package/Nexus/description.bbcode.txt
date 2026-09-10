@@ -9,7 +9,7 @@ The existing Duelist option is renamed [b]Fair Duelist[/b]. This replaces that p
 [*]Enemy health is 75% of Fair: a 25% reduction.
 [*]Enemy damage becomes Fair: 100%, instead of Duelist's 160%.
 [*]Your combat stamina costs become Fair: 100%, instead of Duelist's 175%.
-[*]Enemy aggression, attack speed and parry timing retain Duelist settings.
+[*]Enemy attack pressure is configurable; attack speed and parry timing retain Duelist settings.
 [*]Directional indicators remain disabled in the preset.
 [*]The preset name and difficulty descriptions explain the new balance.
 [/list]
@@ -28,7 +28,7 @@ For the installation steps below, use [url=https://www.nexusmods.com/site/mods/1
 [/list]
 
 [b]INI configuration[/b]
-On first launch, a personal FairDuelist.ini is created in %LOCALAPPDATA%/Dawnwalker/Saved/Config/Windows. Edit enemyHealthMultiplier (default 0.833333333333), enemyDamageMultiplier (0.625), and staminaCostMultiplier (0.571428571429). With referenceDifficulty=Duelist, values are relative to original Duelist (1.0 is unchanged Duelist) and accept 0.1 through 5.0. Restart the game after editing. Keep RPG Difficulty on Fair Duelist. The tooltips show packaged defaults; INI values take precedence. These settings do not change unblockable attacks.
+On first launch, a personal FairDuelist.ini is created in %LOCALAPPDATA%/Dawnwalker/Saved/Config. Edit enemyHealthMultiplier (default 0.833333333333), enemyDamageMultiplier (0.625), and staminaCostMultiplier (0.571428571429). With referenceDifficulty=Duelist, values are relative to original Duelist (1.0 is unchanged Duelist) and accept 0.1 through 5.0. Restart the game after editing. Keep RPG Difficulty on Fair Duelist. The tooltips show packaged defaults; INI values take precedence. These settings do not change unblockable attacks.
 
 [b]Can I customize the difficulty?[/b]
 Yes. Keep [b]RPG Difficulty on Fair Duelist[/b] to preserve the modified enemy health, damage and stamina costs.
@@ -52,3 +52,7 @@ Difficulty overhauls and mods replacing these menu string tables can conflict, e
 [b]Credits and source[/b]
 Original game and difficulty data: Rebel Wolves and the respective rights holders. Balance choices and mod: oOCamilleOo. This is an unofficial mod.
 [url=https://github.com/my-mods/Fair-Duelist-Difficulty]Source repository[/url]
+
+[b]Personal configuration and enemy attack pressure[/b]
+The personal INI is %LOCALAPPDATA%/Dawnwalker/Saved/Config/FairDuelist.ini. Commented or omitted settings inherit shipped defaults; existing personal files are never rewritten. Older INIs are copied to this location if needed, preserving the originals.
+Set enemyAggression to game (default), story, fair, challenging or duelist. With Action Difficulty on Fair Duelist, a named profile changes attack cooldowns and group attack permissions. Animation/parry scaling, boss phases and scripted unblockable attacks remain unchanged.

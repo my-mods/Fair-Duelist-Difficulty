@@ -1,5 +1,9 @@
 # Unreleased
 
+- Added configurable enemy attack cooldown and coordination profiles.
+- Personal INI now uses Saved/Config, inherits shipped defaults, and preserves existing files and legacy preferences.
+
+
 - Explain INI multipliers with commented Fair, Challenging, Story and Duelist examples.
 
 - Make INI multipliers relative to original Duelist, preserving the current default balance and converting legacy settings.
