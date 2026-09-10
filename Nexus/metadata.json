@@ -1,7 +1,7 @@
 {
   "name": "Fair Duelist Difficulty",
-  "version": "1.0.0",
-  "summary": "Customize health, damage, stamina and enemy attack pressure relative to Story, Fair, Challenging or Duelist. Default: 25% less health than Fair, with Fair damage and stamina costs. UE4SS required for INI settings.",
+  "version": "1.1.0",
+  "summary": "Shorter fights with Fair damage and stamina costs. Customize enemy health, damage, aggression and stamina costs through an INI, using Story, Fair, Challenging or Duelist as your starting point. UE4SS required for INI settings.",
   "game": "The Blood of Dawnwalker",
   "gameDomain": "thebloodofdawnwalker",
   "category": "Gameplay",
@@ -16,17 +16,16 @@
   "file": {
     "displayName": "Fair Duelist Difficulty",
     "filename": "Fair-Duelist.zip",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "category": "main",
-    "description": "Fair Duelist with selectable difficulty references and numeric health, damage, stamina and aggression multipliers. UE4SS required for INI settings.",
+    "description": "Customize health, damage, stamina costs and aggression through an INI. Choose any difficulty as your starting point. Defaults: 25% less health than Fair, with Fair damage and stamina costs.",
     "allowModManagerDownload": true,
     "primaryModManagerDownload": true
   },
   "changelog": [
-    "Initial Nexus release, combining the development changes.",
-    "Keep Duelist enemy health, aggression, action settings and hidden directional indicators.",
-    "Use Fair enemy damage and combat stamina costs.",
-    "Rename Duelist to Fair Duelist and correct preset, RPG and Action descriptions.",
-    "Support independent customization through the existing RPG and Action settings."
+    "Reduce default enemy health from 90% to 75% of Fair and update the difficulty descriptions.",
+    "Add personal INI settings for enemy health, damage, stamina costs and aggression.",
+    "Choose Story, Fair, Challenging or Duelist as the starting point for numeric adjustments.",
+    "Add clear INI instructions and examples."
   ]
 }

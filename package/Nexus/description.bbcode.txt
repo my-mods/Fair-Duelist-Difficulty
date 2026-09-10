@@ -1,45 +1,43 @@
 [b]Fair Duelist Difficulty[/b]
 
-Keep Duelist's short, deadly fights while giving yourself more room for mistakes. This mod uses 25% less enemy health than Fair, keeps Duelist aggression and action settings, but uses Fair enemy damage and combat stamina costs.
+Shorter, deadly fights with a little more room for mistakes. By default, enemies have 25% less health than Fair, deal Fair damage, and your combat actions cost Fair stamina. Enemy aggression keeps the Duelist feel.
 
-The existing Duelist option is renamed [b]Fair Duelist[/b]. This replaces that preset; it does not add a fifth difficulty.
+The existing Duelist option is renamed [b]Fair Duelist[/b]. You can keep this setup or adjust it to your taste.
 
-[b]What changes[/b]
-[list]
-[*]Enemy health is 75% of Fair: a 25% reduction.
-[*]Enemy damage becomes Fair: 100%, instead of Duelist's 160%.
-[*]Your combat stamina costs become Fair: 100%, instead of Duelist's 175%.
-[*]Enemy attack pressure is configurable; attack speed and parry timing retain Duelist settings.
-[*]Directional indicators remain disabled in the preset.
-[*]The preset name and difficulty descriptions explain the new balance.
+[b]How do I change my difficulty settings?[/b]
+[list=1]
+[*]Install [url=https://github.com/UE4SS-RE/RE-UE4SS/releases]UE4SS[/url] and this mod, then launch the game once.[/*]
+[*]Press [b]Win + R[/b], paste the path below, and press Enter. Open the file in Notepad.[/*]
 [/list]
-Player maximum health and the other difficulty presets are unchanged.
+[code]%LOCALAPPDATA%\Dawnwalker\Saved\Config\FairDuelist.ini[/code]
+Remove the [b];[/b] at the start of a setting to enable your change, then edit its value. Save the file and restart the game. Keep both [b]RPG Difficulty[/b] and [b]Action Difficulty[/b] set to [b]Fair Duelist[/b].
+
+[list]
+[*][b]referenceDifficulty[/b] — choose Story, Fair, Challenging, or Duelist as your starting point.[/*]
+[*][b]enemyHealthMultiplier[/b] — lower it to kill enemies in fewer hits.[/*]
+[*][b]enemyDamageMultiplier[/b] — lower it to take less damage.[/*]
+[*][b]staminaCostMultiplier[/b] — lower it to spend less stamina on combat actions.[/*]
+[*][b]enemyAggressionMultiplier[/b] — lower it to give enemies longer waits between attacks.[/*]
+[/list]
+[b]1.0[/b] uses your chosen difficulty's value. [b]0.75[/b] means 25% less health, damage or stamina cost. For aggression, 0.75 makes attack cooldowns about 33% longer. Values can range from 0.1 to 5.0.
+
+For example, choose [b]Fair[/b], set health to [b]0.75[/b], and leave the other multipliers at [b]1.0[/b] for shorter fights with Fair damage, stamina costs and aggression. Changing the reference affects all multipliers.
+
+[b]Default INI values[/b]
+[code]referenceDifficulty=Duelist
+enemyHealthMultiplier=0.833333333333
+enemyDamageMultiplier=0.625
+staminaCostMultiplier=0.571428571429
+enemyAggressionMultiplier=1.0[/code]
+Settings you leave commented out use the mod's defaults. Your personal file is kept between mod updates.
+
+Aggression adjusts attack cooldowns and how enemies attack together. It does not remove red/unblockable attacks or change attack animations, parry timing or boss health phases. You can still change directional indicators and other options in the game's menu.
 
 [b]Requirements[/b]
-The Blood of Dawnwalker for PC. No DLC is required. INI configuration requires [url=https://github.com/UE4SS-RE/RE-UE4SS/releases]UE4SS[/url] develop build 97b7e501c or compatible. The packaged default preset works without UE4SS.
-For the installation steps below, use [url=https://www.nexusmods.com/site/mods/1]Vortex[/url] with its The Blood of Dawnwalker game extension.
+[url=https://github.com/UE4SS-RE/RE-UE4SS/releases]UE4SS[/url] develop build 97b7e501c or compatible is needed to use the INI. The default preset also works without UE4SS.
 
 [b]Install[/b]
-[list=1]
-[*]Download Fair-Duelist.zip and import it into Vortex.
-[*]If asked for a mod type, choose Root (game folder).
-[*]Enable the mod, deploy through Vortex, and restart the game.
-[*]Select Fair Duelist in the game's difficulty settings.
-[/list]
-
-[b]INI configuration[/b]
-The personal INI is %LOCALAPPDATA%/Dawnwalker/Saved/Config/FairDuelist.ini. Choose referenceDifficulty=Story, Fair, Challenging or Duelist. Health, damage, stamina-cost and aggression multipliers use that reference's original values. All accept 0.1 through 5.0; 1 means unchanged. Keep RPG and Action Difficulty on Fair Duelist and restart after editing.
-Set enemyAggressionMultiplier=0.75 for approximately 33% longer helper attack cooldowns, or 1.25 for 20% shorter cooldowns. Group-attack permissions come from the reference. This does not change animation/parry scaling, boss phases or scripted unblockable attacks.
-Commented or omitted settings inherit shipped defaults; existing personal files are never rewritten. The former enemyAggression setting is replaced by enemyAggressionMultiplier. There is no legacy reference conversion.
-
-[b]Can I customize the difficulty?[/b]
-Yes. Keep [b]RPG Difficulty on Fair Duelist[/b] to preserve the modified enemy health, damage and stamina costs.
-Changing Action Difficulty changes aggression, attack speed and parry timing independently. Indicators and other custom options can also be changed. Seeing Custom as the overall preset does not remove the modified RPG balance.
-For the exact preset described above, keep Action Difficulty on Fair Duelist and directional indicators off. Selecting another RPG difficulty or overall preset changes the balance accordingly.
-
-[b]Update and uninstall[/b]
-Update by replacing the same Vortex mod entry with the new Fair-Duelist.zip, then deploy and restart. Remove duplicate old entries through Vortex if needed.
-To uninstall, disable or remove the mod in Vortex, deploy, and restart the game. The original Duelist settings and text are restored once no other mod overrides them.
+Install through Vortex. To update, replace the existing Fair Duelist mod with the new archive and deploy, then restart the game.
 
 [b]Compatibility and conflicts[/b]
 Do not combine this with another mod replacing the same difficulty configuration or text tables unless you have chosen which version should win. Fair Duelist must win for its balance and wording to apply.

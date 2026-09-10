@@ -1,12 +1,9 @@
-# Unreleased
+# 1.1.0
 
-- Reduce enemy health to 75% of Fair and update the preset descriptions.
-- Configure health, damage, stamina costs and enemy attack pressure through a personal INI.
-- Choose Story, Fair, Challenging or Duelist as the original-value reference for all multipliers.
-- Scale helper attack cooldowns numerically and use the reference's group-attack permissions.
-- Keep personal settings in Saved/Config with inherited shipped defaults and documented examples.
-- Remove legacy INI conversion and old-location imports.
-- Fix valid INI settings incorrectly disabling runtime overrides.
+- Reduce default enemy health from 90% to 75% of Fair and update the difficulty descriptions.
+- Add personal INI settings for enemy health, damage, stamina costs and aggression.
+- Choose Story, Fair, Challenging or Duelist as the starting point for numeric adjustments.
+- Add clear INI instructions and examples.
 
 # 1.0.0
 
