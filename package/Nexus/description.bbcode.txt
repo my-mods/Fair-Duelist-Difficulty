@@ -13,11 +13,11 @@ The existing Duelist option is renamed [b]Fair Duelist[/b]. You can keep this se
 Remove the [b];[/b] at the start of a setting to enable your change, then edit its value. Save the file and restart the game. Keep both [b]RPG Difficulty[/b] and [b]Action Difficulty[/b] set to [b]Fair Duelist[/b].
 
 [list]
-[*][b]referenceDifficulty[/b] — choose Story, Fair, Challenging, or Duelist as your starting point.[/*]
-[*][b]enemyHealthMultiplier[/b] — lower it to kill enemies in fewer hits.[/*]
-[*][b]enemyDamageMultiplier[/b] — lower it to take less damage.[/*]
-[*][b]staminaCostMultiplier[/b] — lower it to spend less stamina on combat actions.[/*]
-[*][b]enemyAggressionMultiplier[/b] — lower it to give enemies longer waits between attacks.[/*]
+[*][b]referenceDifficulty[/b] â€” choose Story, Fair, Challenging, or Duelist as your starting point.[/*]
+[*][b]enemyHealthMultiplier[/b] â€” lower it to kill enemies in fewer hits.[/*]
+[*][b]enemyDamageMultiplier[/b] â€” lower it to take less damage.[/*]
+[*][b]staminaCostMultiplier[/b] â€” lower it to spend less stamina on combat actions.[/*]
+[*][b]enemyAggressionMultiplier[/b] â€” lower it to give enemies longer waits between attacks.[/*]
 [/list]
 [b]1.0[/b] uses your chosen difficulty's value. [b]0.75[/b] means 25% less health, damage or stamina cost. For aggression, 0.75 makes attack cooldowns about 33% longer. Values can range from 0.1 to 5.0.
 
