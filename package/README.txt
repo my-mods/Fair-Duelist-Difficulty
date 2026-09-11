@@ -4,7 +4,7 @@ Customize enemy health, damage, combat stamina costs and attack delays with abso
 
 [Download the Vortex archive](https://github.com/my-mods/Fair-Duelist-Customizable-Difficulty/raw/refs/heads/main/Fair-Duelist-Customizable-Difficulty.zip)
 
-`100%` means the unscaled game value, `50%` means half, and `150%` means one and a half times. These are absolute values: damage at `0%` is zero damage. Attack delays use the same scale; lower delays allow more frequent attacks.
+`100%` means the unscaled game value, `50%` means half, and `150%` means one and a half times. These are absolute values: damage at `0%` is zero damage. Attack delays use the same scale; lower delays allow more frequent attacks. All six percentage sliders range from 0% to 500% in 5-point steps.
 
 | Balance preset | Enemy health | Enemy damage | Combat stamina cost | Attack delay | Low-health delay | Ranged delay |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ Requires UE4SS for Dawnwalker and [Mod Setting Menu 1.0.5.1](https://www.nexusmo
 
 Close the game and back up your generated `Dawnwalker/Binaries/Win64/ue4ss/Mods/FairDuelist/settings.ini`. Replace/reinstall the existing Fair Duelist entry from `Fair-Duelist-Customizable-Difficulty.zip` through Vortex. When replacing the build that included a menu extension, disable Fair Duelist and deploy first to restore the original menu file, then reinstall this ZIP. Deploy and restart. When updating from the old asset-based package, disable it and deploy first so Vortex removes `zzz_FairDuelist_P.pak`, `.ucas` and `.utoc`, then install the replacement archive. Keep only one Fair Duelist entry active. Reinstalling replaces the package layout; redeployment alone does not change an old installer plan.
 
-On first use, load a save, then open Mod Settings > Fair Duelist - Customizable Difficulty. Outdated or invalid settings files are replaced with current Duelist defaults at startup. Old multipliers and personal INI values are not imported. New installations start from the currently selected native RPG and Action difficulties. See [SETTINGS.md](SETTINGS.md) for configuration and recovery.
+On first use, load a save, then open Mod Settings > Fair Duelist - Customizable Difficulty. Valid absolute settings above 500% are reduced to 500% during startup, retaining the other preferences and saving the original as `settings.ini.before-500-percent`. Outdated or invalid settings files are replaced with current Duelist defaults at startup. Old multipliers and personal INI values are not imported. New installations start from the currently selected native RPG and Action difficulties. See [SETTINGS.md](SETTINGS.md) for configuration and recovery.
 
 To uninstall, disable/remove Fair Duelist in Vortex and deploy. Restart the game. Back up generated preferences before removing the mod.
 

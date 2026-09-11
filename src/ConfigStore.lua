@@ -1,5 +1,34 @@
 -- Absolute Mod Setting Menu storage. Invalid or outdated files reset to defaults. MIT.
 local M = {}
+-- Accept only the previous absolute ranges when upgrading to the 500% cap.
+local previousMaximum = {
+    enemyDamagePercent=800, staminaCostPercent=875,
+    attackDelayPercent=2000, lowHealthAttackDelayPercent=2000, rangedAttackDelayPercent=2000,
+}
+local rangeBackup = '.before-500-percent'
+local function cappedPreferences(Store, File, text, schema, Config)
+    local previous = {}
+    for i, setting in ipairs(schema) do
+        local copy = {}; for key, value in pairs(setting) do copy[key]=value end
+        copy.max = previousMaximum[setting.key] or copy.max
+        previous[i]=copy
+    end
+    local values = Store.parse(text, previous)
+    if not values then return nil end
+    local changed = {}
+    for _, setting in ipairs(schema) do
+        if setting.max and values[setting.key]>setting.max then
+            values[setting.key]=setting.max
+            changed[#changed+1]=setting
+        end
+    end
+    if #changed==0 then return nil end
+    values.difficultyPreset=Config.classify(values)
+    for _, setting in ipairs(schema) do
+        if setting.key=='difficultyPreset' then changed[#changed+1]=setting; break end
+    end
+    return values, File.render(text, changed, values), #changed-1
+end
 function M.load(directory, Config, initial)
     local Store=dofile(directory..'SettingsStore.lua')
     local File=dofile(directory..'SettingsFile.lua')
@@ -10,6 +39,17 @@ function M.load(directory, Config, initial)
     if text then
         local current,e=Store.parse(text,schema)
         if current then current.difficultyPreset=Config.classify(current); return current,path,text end
+        local capped,updated,count=cappedPreferences(Store,File,text,schema,Config)
+        if capped then
+            local checked,ce=Store.parse(updated,schema)
+            if not checked then return reject(ce) end
+            local ok,me=File.replace(Store,path,text,updated,rangeBackup,true)
+            if not ok then return reject(me) end
+            if capped.debugLogging==1 then
+                print('[FairDuelist] Capped '..count..' saved percentages at 500%; original retained at '..path..rangeBackup..'\n')
+            end
+            return capped,path,updated
+        end
         local cfg=Config.defaults()
         local updated=File.render('',schema,cfg)
         local checked,ce=Store.parse(updated,schema)
@@ -20,7 +60,7 @@ function M.load(directory, Config, initial)
     end
     if code~=2 then return reject(err) end
     -- A previous interrupted conversion must never be treated as a fresh install.
-    for _,suffix in ipairs({'.absolute-v2.backup','.absolute-write.backup'}) do
+    for _,suffix in ipairs({'.absolute-v2.backup','.absolute-write.backup',rangeBackup,rangeBackup..'.new'}) do
         local backup,be,bc=Store.read(path..suffix)
         if backup or bc~=2 then return reject('Recover '..path..suffix..': '..tostring(be or '')) end
     end

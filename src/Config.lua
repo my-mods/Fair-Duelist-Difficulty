@@ -2,11 +2,11 @@
 local M = {}
 M.fields = {
     {key='enemyHealthPercent', map='RPGDifficulties', field='HealthMultiplier', group='RPG', max=500},
-    {key='enemyDamagePercent', map='RPGDifficulties', field='DamageMultiplier', group='RPG', max=800},
-    {key='staminaCostPercent', map='RPGDifficulties', field='PlayerCombatStaminaCostsMultiplier', group='RPG', max=875},
-    {key='attackDelayPercent', map='ActionDifficulties', field='HelperTicketCooldownMultiplier', group='Action', max=2000},
-    {key='lowHealthAttackDelayPercent', map='ActionDifficulties', field='LowHealthHelperTicketCooldownMultiplier', group='Action', max=2000},
-    {key='rangedAttackDelayPercent', map='ActionDifficulties', field='HelperRangedAttackCooldownMultiplier', group='Action', max=2000},
+    {key='enemyDamagePercent', map='RPGDifficulties', field='DamageMultiplier', group='RPG', max=500},
+    {key='staminaCostPercent', map='RPGDifficulties', field='PlayerCombatStaminaCostsMultiplier', group='RPG', max=500},
+    {key='attackDelayPercent', map='ActionDifficulties', field='HelperTicketCooldownMultiplier', group='Action', max=500},
+    {key='lowHealthAttackDelayPercent', map='ActionDifficulties', field='LowHealthHelperTicketCooldownMultiplier', group='Action', max=500},
+    {key='rangedAttackDelayPercent', map='ActionDifficulties', field='HelperRangedAttackCooldownMultiplier', group='Action', max=500},
     {key='attackDuringBlock', map='ActionDifficulties', field='bAllowAttackingWhileAnotherNPCIsInBlockReaction', group='Action', boolean=true},
 }
 M.names = {'Story','Fair','Challenging','Duelist','Custom'}

@@ -7,20 +7,22 @@ All percentages are absolute, measured against the unscaled game value. `100%` i
 | Setting | Range or choices |
 | --- | --- |
 | Override difficulty balance | Off, On |
-| Enemy health | 0–500% |
-| Enemy damage | 0–800% |
-| Combat stamina cost | 0–875% |
-| Enemy attack delay | 0–2000% |
-| Low-health enemy attack delay | 0–2000% |
-| Ranged enemy attack delay | 0–2000% |
+| Enemy health | 0% to 500% |
+| Enemy damage | 0% to 500% |
+| Combat stamina cost | 0% to 500% |
+| Enemy attack delay | 0% to 500% |
+| Low-health enemy attack delay | 0% to 500% |
+| Ranged enemy attack delay | 0% to 500% |
 | Attacks while another enemy blocks | Off, On |
 | Logging | Off, On |
 
-Sliders move by one percentage point and display one decimal place. Existing fractional preferences retain their precision until edited. Native Story/Fair/Challenging/Duelist values are listed in the README. Custom is recognized from the actual control values. The coordinated-attack option is Off for Story/Fair and On for Challenging/Duelist.
+Sliders move by five percentage points and display one decimal place. Existing fractional preferences retain their precision until edited. Native Story/Fair/Challenging/Duelist values are listed in the README. Custom is recognized from the actual control values. The coordinated-attack option is Off for Story/Fair and On for Challenging/Duelist.
 
 ## Storage and migration
 
 The stable menu ID is `oOCamilleOo_FairDuelist`; the runtime folder remains `FairDuelist`. Generated `settings.ini` is the authoritative store and is never shipped. Its version marker distinguishes absolute percentages from the older relative-percentage format.
+
+When updating valid absolute settings from the previous wider ranges, only percentages above 500% are reduced to 500%. Other preferences, comments and unrelated entries are retained, and the original is saved as `settings.ini.before-500-percent`. If that backup or its `.new` transaction file is unresolved, preserve it and recover the settings file before retrying.
 
 At startup, outdated or invalid settings.ini files are replaced in full with current Duelist defaults. Old multipliers and personal INI values are not imported. Valid current settings are retained. Back up preferences before updating if you want to keep a reference. New installations initialize from the currently selected native RPG and Action difficulties on first save load.
 
