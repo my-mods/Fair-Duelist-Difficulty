@@ -1,13 +1,12 @@
 # Settings
 
-Open Mod Settings > Fair Duelist - Customizable Difficulty. Select a balance preset, adjust the controls, press Apply, then load a save. Choosing a preset replaces all pending balance values, including custom edits. Restore discards unapplied changes; Reset loads Duelist defaults. Confirming a difficulty in the game's own settings also resets the corresponding balance values; canceled previews do not change your saved configuration.
+Choose and confirm a starting difficulty in the game's settings, then open Mod Settings > Fair Duelist - Customizable Difficulty to adjust individual controls. Press Apply, then load a save. Restore discards unapplied changes; Reset loads Duelist defaults. Warning: confirming another difficulty in the game's settings replaces the corresponding custom values; canceled previews preserve them.
 
 All percentages are absolute, measured against the unscaled game value. `100%` is normal, `50%` is half, and `150%` is one and a half times. `0%` damage is zero damage. Attack-delay percentages measure cooldown length; a lower value means a shorter delay, rather than a slower animation.
 
 | Setting | Range or choices |
 | --- | --- |
 | Override difficulty balance | Off, On |
-| Balance preset | Story, Fair, Challenging, Duelist, Custom |
 | Enemy health | 0–500% |
 | Enemy damage | 0–800% |
 | Combat stamina cost | 0–875% |

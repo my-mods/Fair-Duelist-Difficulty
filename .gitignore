@@ -20,3 +20,8 @@ AGENTS.md
 /package/Dawnwalker/Content/Paks/~mods/zzz_FairDuelist_P.utoc
 /package/Dawnwalker/Binaries/Win64/ue4ss/Mods/FairDuelist/Scripts/Aggression.lua
 /package/Dawnwalker/Binaries/Win64/ue4ss/Mods/FairDuelist/Scripts/FairDuelist.defaults.ini
+
+# Retired menu override retained locally for provenance and regression checks.
+/src/Menu/
+/upstream/Menu/
+/LICENSES/DawnwalkerModMenu-compatibility.txt

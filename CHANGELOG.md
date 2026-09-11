@@ -1,7 +1,8 @@
 ## Unreleased
 
 - Use absolute percentages for enemy health, damage, stamina costs and attack delays.
-- Load standard difficulty values into editable controls and recognize Custom balance.
+- Customize standard difficulty values selected in the game settings.
+- Use the original Mod Setting Menu without a shared file override or additional preset selector.
 - Reset the corresponding custom values when a native difficulty change is confirmed.
 - Restore the game's original difficulty names and remove the packaged preset replacements.
 - Preserve effective balance when importing older settings.

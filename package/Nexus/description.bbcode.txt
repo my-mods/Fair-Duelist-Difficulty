@@ -1,12 +1,12 @@
 [b]Fair Duelist - Customizable Difficulty[/b]
 
-Choose Story, Fair, Challenging or Duelist as a balance preset, then customize absolute enemy health, damage, stamina costs and attack delays. Individual edits select Custom. 100% means the unscaled game value; 50% is half and 150% is one and a half times. Lower attack-delay percentages allow more frequent attacks.
+Choose and confirm Story, Fair, Challenging or Duelist in the game settings, then open Mod Settings to customize absolute enemy health, damage, stamina costs and attack delays. 100% means the unscaled game value; 50% is half and 150% is one and a half times. Lower attack-delay percentages allow more frequent attacks.
 
-Choosing a preset replaces custom balance values. Confirming a difficulty in the game's own settings also resets the corresponding values; canceled previews preserve saved balance. The game retains its original difficulty names. Existing preferences migrate with the same effective balance.
+Confirming a difficulty in the game's settings resets the corresponding values; canceled previews preserve saved balance. The game retains its original difficulty names. Existing preferences migrate with the same effective balance.
 
 [b]Installation[/b]
 
-Requires UE4SS and Mod Setting Menu 1.0.5.1. Replace the existing Fair Duelist entry through Vortex and let Fair Duelist win the shared DawnwalkerModMenu/Scripts/choices.lua conflict. The package includes a menu extension for presets that fill multiple sliders. For an old asset-based installation, disable and deploy it before installing the replacement so Vortex removes its old containers. Restart, load a save once, then configure the mod in Mod Settings. Apply, then load a save. Back up generated settings.ini before reinstalling or uninstalling. See the included README and SETTINGS.md for complete instructions.
+Requires UE4SS and Mod Setting Menu 1.0.5.1. Replace the existing Fair Duelist entry through Vortex. The mod uses the original Mod Setting Menu without replacing its files. For an old asset-based installation, disable and deploy it before installing the replacement so Vortex removes its old containers. Restart, load a save once, then configure the mod in Mod Settings. Apply, then load a save. Back up generated settings.ini before reinstalling or uninstalling. See the included README and SETTINGS.md for complete instructions.
 
 [b]Configuration[/b]
 
@@ -14,4 +14,4 @@ Enemy health, enemy damage and combat stamina cost use absolute percentages. Thr
 
 [b]Compatibility and credits[/b]
 
-No cooked difficulty or string-table assets are replaced. Mods changing the same runtime balance fields or the menu's choices.lua can conflict. Menu extension based on Dawnwalker Mod Menu 1.0.5.1. Includes MIT-licensed ue4ss-common helpers. Original game data belongs to its respective rights holders.
+No cooked difficulty or string-table assets are replaced. Mods changing the same runtime balance fields can conflict. Includes MIT-licensed ue4ss-common helpers. Original game data belongs to its respective rights holders.

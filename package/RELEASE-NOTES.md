@@ -1,7 +1,8 @@
 Unreleased
 
-- Absolute percentage controls with Story, Fair, Challenging, Duelist and Custom balance.
-- Preset selection fills the controls; confirmed native difficulty changes reset the matching balance values.
+- Absolute percentage controls for custom balance.
+- Confirmed difficulty changes in the game settings reset the matching balance values.
+- Uses Mod Setting Menu without replacing its files.
 - Original game difficulty names, preserved legacy preferences, and one final Logging control.
 
 Fair Duelist Difficulty 1.1.0
