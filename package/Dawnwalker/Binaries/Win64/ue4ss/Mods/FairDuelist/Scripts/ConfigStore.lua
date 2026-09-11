@@ -11,13 +11,14 @@ function M.load(directory, Config)
         if #problems > 0 then return nil, table.concat(problems, '; ') end
         local base = os.getenv('LOCALAPPDATA')
         if not base then return nil, 'LOCALAPPDATA unavailable for legacy migration' end
-        local personal, pe, pc = Store.read(base .. '/Dawnwalker/Saved/Config/FairDuelist.ini')
+        local legacyPath = base .. '/Dawnwalker/Saved/Config/FairDuelist.ini'
+        local personal, pe, pc = Store.read(legacyPath)
         if not personal and pc ~= 2 then return nil, pe end
         local cfg, errors = Config.parse(personal or '', defaults)
         if #errors > 0 then return nil, table.concat(errors, '; ') end
         for i, name in ipairs(names) do if cfg.referenceDifficulty == name then cfg.referenceDifficulty = i-1; break end end
         cfg.enabled = cfg.enabled and 1 or 0; cfg.debugLogging = cfg.debugLogging and 1 or 0
-        return cfg
+        return cfg, nil, personal and {{path=legacyPath, text=personal}} or nil
     end)
     if not values then print('[FairDuelist] Settings rejected: '..tostring(err)..'\n'); return {enabled=false}, path end
     values.referenceDifficulty=names[values.referenceDifficulty+1]
