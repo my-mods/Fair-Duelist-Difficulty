@@ -70,6 +70,14 @@ function M.load(directory, Config, initial)
     values.difficultyPreset=Config.classify(values)
     return values,path,Store.read(path)
 end
+-- Make existing preferences readable by the main-menu UI before a save loads.
+-- Fresh installs still initialize from the game's selected difficulty on save load.
+function M.prepare(directory, Config)
+    local Store=dofile(directory..'SettingsStore.lua')
+    local text,err,code=Store.read(Store.path(directory))
+    if text then return M.load(directory, Config) end
+    if code~=2 then error(err or 'Cannot read settings') end
+end
 function M.save(directory, Config, values, expected)
     local Store=dofile(directory..'SettingsStore.lua')
     local File=dofile(directory..'SettingsFile.lua')

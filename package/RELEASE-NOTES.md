@@ -1,5 +1,6 @@
 Unreleased
 
+- Convert existing multiplier settings before the main menu opens, fixing missing percentage controls after an update.
 - Absolute percentage controls for custom balance.
 - Confirmed difficulty changes in the game settings reset the matching balance values.
 - Uses Mod Setting Menu without replacing its files.
