@@ -8,3 +8,15 @@ AGENTS.md
 **/settings.ini
 **/settings.ini.*
 **/HUDTweaks.advanced.ini
+
+# Retired cooked preset and relative-aggression sources retained locally.
+/src/DA_DifficultyConfig.json
+/src/ST_Difficulties.json
+/src/ST_Settings_Tab_Game.json
+/src/Aggression.lua
+/src/FairDuelist.defaults.ini
+/package/Dawnwalker/Content/Paks/~mods/zzz_FairDuelist_P.pak
+/package/Dawnwalker/Content/Paks/~mods/zzz_FairDuelist_P.ucas
+/package/Dawnwalker/Content/Paks/~mods/zzz_FairDuelist_P.utoc
+/package/Dawnwalker/Binaries/Win64/ue4ss/Mods/FairDuelist/Scripts/Aggression.lua
+/package/Dawnwalker/Binaries/Win64/ue4ss/Mods/FairDuelist/Scripts/FairDuelist.defaults.ini

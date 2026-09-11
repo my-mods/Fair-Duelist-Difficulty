@@ -1,0 +1,13 @@
+{
+  "game": "The Blood of Dawnwalker",
+  "steamBuild": "25232147",
+  "retrieved": "2026-09-11",
+  "asset": "/Game/_Dawnwalker/Combat/DA_DifficultyConfig",
+  "assetSourceSha256": "546cba9568e43bbb96d8e741c2b58dc899c1914d28229b41a36b8c26ca4b07c2",
+  "executableSha256": "cb9b7d7bd88a6754c0a9c08318aa64d5013ddfd92d5badcae84e1b4ea980dcfc",
+  "nativeSettings": {
+    "Game_Difficulty_Combat": 69,
+    "Game_Difficulty_CombatAction": 70
+  },
+  "notes": "Stock RPG and action values verified from the unchanged extracted asset. Native confirmation, difficulty getter output parameters and enum IDs verified against the installed executable."
+}

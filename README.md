@@ -1,34 +1,38 @@
 # Fair Duelist - Customizable Difficulty
 
-![Fair Duelist - Customizable Difficulty](Nexus/thumbnail.jpg)
-
-Modifies the existing Duelist preset in The Blood of Dawnwalker.
-Select Fair Duelist in the game's difficulty settings. This is the renamed Duelist slot, not a fifth preset.
+Customize enemy health, damage, combat stamina costs and attack delays with absolute percentages. Choose Story, Fair, Challenging or Duelist to load its balance values, then adjust individual controls to create Custom balance.
 
 [Download the Vortex archive](https://github.com/my-mods/Fair-Duelist-Customizable-Difficulty/raw/refs/heads/main/Fair-Duelist-Customizable-Difficulty.zip)
 
-Enemy health: 75% of Fair (25% less health).
-Enemy damage: Fair (100%, reduced from Duelist 160%).
-Player combat stamina costs: Fair (100%, reduced from Duelist 175%).
-Enemy attack pressure: configurable relative to the chosen reference; defaults to Duelist. Animation speed, parry timing and directional indicators remain controlled by the game.
+`100%` means the unscaled game value, `50%` means half, and `150%` means one and a half times. These are absolute values: damage at `0%` is zero damage. Attack delays use the same scale; lower delays allow more frequent attacks.
 
-Customization: keep RPG Difficulty on Fair Duelist to retain your INI balance (defaults: enemy health 75%, damage 100%, and combat stamina costs 100%). Changing Action Difficulty changes attack speed, aggression and parry timing, but does not change the RPG values. Indicators, consumables and other custom options can be changed independently. The overall preset may display Custom; that alone does not remove the RPG changes. Selecting another RPG difficulty or overall preset changes the balance accordingly. For the exact intended setup, keep Action Difficulty on Fair Duelist and directional indicators off.
-Other presets and player maximum health are unchanged.
+| Balance preset | Enemy health | Enemy damage | Combat stamina cost | Attack delay | Low-health delay | Ranged delay |
+| --- | --- | --- | --- | --- | --- | --- |
+| Story | 50% | 40% | 50% | 200% | 200% | 200% |
+| Fair | 100% | 100% | 100% | 140% | 120% | 140% |
+| Challenging | 100% | 130% | 150% | 120% | 100% | 120% |
+| Duelist | 90% | 160% | 175% | 100% | 60% | 100% |
 
-Installation: import Fair-Duelist-Customizable-Difficulty.zip into Vortex, choose the game-root installer if prompted, enable and deploy. Restart the game and select Fair Duelist.
-Requirements: The Blood of Dawnwalker; Vortex with its Dawnwalker extension. UE4SS is required for INI overrides; the packaged default preset can run without it.
-Update: replace the same Vortex mod entry with the new archive and deploy.
-Uninstall: disable/remove this mod in Vortex and deploy; restart the game.
-Conflicts: replaces /Game/_Dawnwalker/Combat/DA_DifficultyConfig, /Game/_Dawnwalker/Combat/StringTables/ST_Difficulties, and /Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game. Text mods replacing these string tables may conflict. Use only one mod replacing each of these assets; Fair Duelist - Customizable Difficulty must win for these values to apply. Archive filenames alone cannot detect this conflict.
-Compatibility: built for the PC version; conflicts are listed above.
+Selecting a balance preset immediately replaces the pending values in Mod Settings. Individual edits select Custom. Apply saves your changes; load a save to use them. Restore discards unapplied changes, and Reset selects Duelist defaults. The game retains its original Story/Fair/Challenging/Duelist names.
 
-Original difficulty data belongs to Rebel Wolves and its respective rights holders. This mod changes three difficulty multipliers and the corresponding menu text.
+**Choosing and confirming a difficulty in the game's own settings also replaces your custom balance.** A full preset resets all balance controls. Changing only RPG Difficulty resets health, damage and stamina costs; changing only Action Difficulty resets attack delays and the coordinated-attack option. Canceling an unconfirmed preview preserves your saved custom balance. The Mod Settings balance preset controls these listed values; animation speed, parry windows, indicators and other game options follow the game's own settings.
 
-## Settings
+## Installation and updates
 
-Use [Mod Setting Menu 1.0.5 or later](https://www.nexusmods.com/thebloodofdawnwalker/mods/271) from the main menu. Press Apply, then load a save. See [SETTINGS.md](SETTINGS.md) for all controls, first-use import and preference backups. Console settings commands are retired.
+Requires UE4SS for Dawnwalker and [Mod Setting Menu 1.0.5.1](https://www.nexusmods.com/thebloodofdawnwalker/mods/271). This package includes a compatibility extension for that menu version so a preset can fill several sliders with different values.
 
+Close the game and back up your generated `Dawnwalker/Binaries/Win64/ue4ss/Mods/FairDuelist/settings.ini`. Replace/reinstall the existing Fair Duelist entry from `Fair-Duelist-Customizable-Difficulty.zip` through Vortex. For the shared `DawnwalkerModMenu/Scripts/choices.lua` conflict, let Fair Duelist win over Mod Setting Menu. Deploy and restart. When updating from the old asset-based package, disable it and deploy first so Vortex removes `zzz_FairDuelist_P.pak`, `.ucas` and `.utoc`, then install the replacement archive. Keep only one Fair Duelist entry active. Reinstalling replaces the package layout; redeployment alone does not change an old installer plan.
 
-Bundled library
+On first use, load a save, then open Mod Settings > Fair Duelist - Customizable Difficulty. Existing decimal or relative-percentage preferences convert to the same effective balance. The original menu settings are retained in `settings.ini.absolute-v2.backup`; a pre-menu personal INI is retained as well. New installations start from the currently selected native RPG and Action difficulties. See [SETTINGS.md](SETTINGS.md) for configuration and recovery.
 
-This mod includes the MIT-licensed ue4ss-common Lua helpers (https://github.com/my-mods/ue4ss-common). No separate library installation is required. Its license is included in LICENSES/FairDuelist-ue4ss-common.txt.
+To uninstall, disable/remove Fair Duelist in Vortex and deploy, allowing Vortex to restore the menu's original `choices.lua`. Restart the game. Back up generated preferences before removing the mod.
+
+## Compatibility
+
+The runtime uses Lua and does not replace the game's difficulty data or string tables. At runtime, enabled overrides apply the same absolute balance values to all four difficulty rows; confirming a native difficulty selection resets the corresponding values. Other mods writing those same runtime fields conflict. The menu compatibility file also conflicts with other replacements of `DawnwalkerModMenu/Scripts/choices.lua`; review it against a newer menu version before choosing a winner.
+
+**Logging** is the final menu setting and the only diagnostic control. Leave it Off for normal play; On writes troubleshooting details to `Dawnwalker/Binaries/Win64/ue4ss/UE4SS.log`. Failures are reported even when Logging is Off. No configuration polling is used.
+
+## Credits
+
+Original game difficulty data belongs to Rebel Wolves and its respective rights holders. The menu compatibility extension builds on Dawnwalker Mod Menu 1.0.5.1; its provenance and rights notice are included. Fair Duelist also bundles pinned MIT-licensed [ue4ss-common](https://github.com/my-mods/ue4ss-common) helpers; no separate shared-library installation is required.

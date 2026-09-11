@@ -1,0 +1,8 @@
+Dawnwalker Mod Menu compatibility extension
+
+Based on Scripts/choices.lua from Dawnwalker Mod Menu 1.0.5.1:
+https://www.nexusmods.com/thebloodofdawnwalker/mods/271
+
+The upstream menu code remains the work of its original author and retains its original rights. Fair Duelist's MIT license applies only to its original additions, including the opt-in matrix-preset extension; it does not relicense the upstream menu. The unchanged upstream file and its SHA-256 provenance are retained in this repository under upstream/Menu.
+
+The extension lets a declared preset fill numeric sliders and toggles, recognizes Custom values, and preserves the original behavior of integrations without a preset matrix.

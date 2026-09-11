@@ -1,0 +1,9 @@
+{
+  "project": "Dawnwalker Mod Menu",
+  "version": "1.0.5.1",
+  "source": "https://www.nexusmods.com/thebloodofdawnwalker/mods/271",
+  "file": "Scripts/choices.lua",
+  "sha256": "28dc22fd3c6e375653e0c10231db6ac8a7c62f8fdae1f1ecb54ad5b96e3555fd",
+  "retrieved": "2026-09-11",
+  "changes": "Opt-in PresetMatrix support for linked numeric sliders and toggles; existing integrations retain their behavior."
+}

@@ -1,10 +1,14 @@
--- Settings contract shared by the loader and Mod Setting Menu. MIT License.
+-- Absolute settings contract. MIT.
 return {
+    {key="settingsVersion", default=2, values={2}},
     {key="enabled", default=1, values={0,1}},
-    {key="referenceDifficulty", default=3, values={0,1,2,3}},
-    {key="enemyHealthPercent", default=-16.666666666666675, min=-90, max=400, integer=false},
-    {key="enemyDamagePercent", default=-37.5, min=-90, max=400, integer=false},
-    {key="staminaCostPercent", default=-42.857142857142861, min=-90, max=400, integer=false},
-    {key="enemyAggressionPercent", default=0, min=-90, max=400, integer=false},
+    {key="difficultyPreset", default=3, values={0,1,2,3,4}},
+    {key="enemyHealthPercent", default=90, min=0, max=500},
+    {key="enemyDamagePercent", default=160, min=0, max=800},
+    {key="staminaCostPercent", default=175, min=0, max=875},
+    {key="attackDelayPercent", default=100, min=0, max=2000},
+    {key="lowHealthAttackDelayPercent", default=60, min=0, max=2000},
+    {key="rangedAttackDelayPercent", default=100, min=0, max=2000},
+    {key="attackDuringBlock", default=1, values={0,1}},
     {key="debugLogging", default=0, values={0,1}},
 }

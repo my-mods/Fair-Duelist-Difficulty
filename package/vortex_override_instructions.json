@@ -12,7 +12,7 @@
   {
     "type": "attribute",
     "key": "description",
-    "value": "Duelist with Fair enemy damage and combat stamina costs."
+    "value": "Absolute difficulty balance with standard presets and editable percentages."
   },
   {
     "type": "attribute",
@@ -27,8 +27,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -44,8 +49,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -61,8 +71,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -78,8 +93,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -95,8 +115,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -112,8 +137,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -129,8 +159,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -146,8 +181,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -163,8 +203,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -180,8 +225,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -197,8 +247,35 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "vortex_override_instructions.json",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -214,8 +291,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -231,8 +313,13 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   },
   {
@@ -248,8 +335,189 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
+      "vortex_override_instructions.json",
       "SETTINGS.md",
-      "LICENSES/FairDuelist-ue4ss-common.txt"
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "LICENSES/DawnwalkerModMenu-compatibility.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "LICENSES\\DawnwalkerModMenu-compatibility.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus/banner.jpg",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus\\banner.jpg",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus/thumbnail.jpg",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus\\thumbnail.jpg",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus/THUMBNAIL-SOURCE.md",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "Nexus\\THUMBNAIL-SOURCE.md",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "vortex_override_instructions.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt",
+      "LICENSES/DawnwalkerModMenu-compatibility.txt",
+      "Nexus/banner.jpg",
+      "Nexus/thumbnail.jpg",
+      "Nexus/THUMBNAIL-SOURCE.md"
     ]
   }
 ]

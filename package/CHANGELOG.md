@@ -1,3 +1,13 @@
+## Unreleased
+
+- Use absolute percentages for enemy health, damage, stamina costs and attack delays.
+- Load standard difficulty values into editable controls and recognize Custom balance.
+- Reset the corresponding custom values when a native difficulty change is confirmed.
+- Restore the game's original difficulty names and remove the packaged preset replacements.
+- Preserve effective balance when importing older settings.
+
+- Simplify diagnostics to a single Logging switch at the end of Mod Settings.
+
 # 1.1.0
 
 - Reduce default enemy health from 90% to 75% of Fair and update the difficulty descriptions.
