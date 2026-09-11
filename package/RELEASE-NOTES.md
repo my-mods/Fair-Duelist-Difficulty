@@ -1,10 +1,10 @@
 Unreleased
 
-- Convert existing multiplier settings before the main menu opens, fixing missing percentage controls after an update.
+- Replace outdated or invalid settings with current defaults before the main menu opens.
 - Absolute percentage controls for custom balance.
 - Confirmed difficulty changes in the game settings reset the matching balance values.
 - Uses Mod Setting Menu without replacing its files.
-- Original game difficulty names, preserved legacy preferences, and one final Logging control.
+- Original game difficulty names and one final Logging control.
 
 Fair Duelist Difficulty 1.1.0
 

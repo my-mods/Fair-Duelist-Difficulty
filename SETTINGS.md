@@ -22,7 +22,7 @@ Sliders move by one percentage point and display one decimal place. Existing fra
 
 The stable menu ID is `oOCamilleOo_FairDuelist`; the runtime folder remains `FairDuelist`. Generated `settings.ini` is the authoritative store and is never shipped. Its version marker distinguishes absolute percentages from the older relative-percentage format.
 
-On the first save load, existing decimal multipliers or relative percentages convert to absolute values using their saved reference difficulty. The original file is retained as `settings.ini.absolute-v2.backup`. Unrelated settings and comments remain in place. Old attack pressure converts to the equivalent three absolute delays, preserving the original inverse-cooldown behavior. A pre-menu personal `FairDuelist.ini` is imported only when no generated settings file exists and is retained. New installations start from the currently selected native RPG and Action difficulties.
+At startup, outdated or invalid settings.ini files are replaced in full with current Duelist defaults. Old multipliers and personal INI values are not imported. Valid current settings are retained. Back up preferences before updating if you want to keep a reference. New installations initialize from the currently selected native RPG and Action difficulties on first save load.
 
 Back up your generated preferences before reinstalling or uninstalling. Do not overwrite an absolute settings file with an old INI. Invalid, duplicate or missing required values stop loading and are reported in `Dawnwalker/Binaries/Win64/ue4ss/UE4SS.log`.
 

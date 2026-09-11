@@ -1,12 +1,12 @@
 ## Unreleased
 
-- Convert existing multiplier settings before the main menu opens, fixing missing percentage controls after an update.
+- Replace outdated or invalid settings with current defaults before the main menu opens.
 - Use absolute percentages for enemy health, damage, stamina costs and attack delays.
 - Customize standard difficulty values selected in the game settings.
 - Use the original Mod Setting Menu without a shared file override or additional preset selector.
 - Reset the corresponding custom values when a native difficulty change is confirmed.
 - Restore the game's original difficulty names and remove the packaged preset replacements.
-- Preserve effective balance when importing older settings.
+- Reset obsolete settings to the current defaults.
 
 - Simplify diagnostics to a single Logging switch at the end of Mod Settings.
 

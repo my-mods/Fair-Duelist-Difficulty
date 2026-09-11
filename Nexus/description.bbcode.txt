@@ -2,7 +2,7 @@
 
 Choose and confirm Story, Fair, Challenging or Duelist in the game settings, then open Mod Settings to customize absolute enemy health, damage, stamina costs and attack delays. 100% means the unscaled game value; 50% is half and 150% is one and a half times. Lower attack-delay percentages allow more frequent attacks.
 
-Confirming a difficulty in the game's settings resets the corresponding values; canceled previews preserve saved balance. The game retains its original difficulty names. Existing preferences migrate with the same effective balance.
+Confirming a difficulty in the game's settings resets the corresponding values; canceled previews preserve saved balance. The game retains its original difficulty names. Outdated or invalid settings reset to current defaults.
 
 [b]Installation[/b]
 
