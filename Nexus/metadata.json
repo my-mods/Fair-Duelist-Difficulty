@@ -1,7 +1,7 @@
 {
   "name": "Fair Duelist - Customizable Difficulty",
   "version": "1.1.0",
-  "summary": "Shorter fights with Fair damage and stamina costs. Customize enemy health, damage, aggression and stamina costs through an INI, using Story, Fair, Challenging or Duelist as your starting point. UE4SS required for INI settings.",
+  "summary": "Shorter fights with Fair damage and stamina costs. Customize enemy health, damage, aggression and stamina costs through Mod Settings, using Story, Fair, Challenging or Duelist as your starting point. UE4SS required for menu settings.",
   "game": "The Blood of Dawnwalker",
   "gameDomain": "thebloodofdawnwalker",
   "category": "Gameplay",
@@ -18,7 +18,7 @@
     "filename": "Fair-Duelist-Customizable-Difficulty.zip",
     "version": "1.1.0",
     "category": "main",
-    "description": "Customize health, damage, stamina costs and aggression through an INI. Choose any difficulty as your starting point. Defaults: 25% less health than Fair, with Fair damage and stamina costs.",
+    "description": "Customize health, damage, stamina costs and aggression through Mod Settings. Choose any difficulty as your starting point. Defaults: 25% less health than Fair, with Fair damage and stamina costs.",
     "allowModManagerDownload": true,
     "primaryModManagerDownload": true
   },

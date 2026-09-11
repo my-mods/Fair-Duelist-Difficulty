@@ -3,3 +3,8 @@
 *.py
 tests/
 AGENTS.md
+
+# Generated personal menu settings are never shipped.
+**/settings.ini
+**/settings.ini.*
+**/HUDTweaks.advanced.ini

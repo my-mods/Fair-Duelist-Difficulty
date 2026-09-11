@@ -1,54 +1,27 @@
 [b]Fair Duelist - Customizable Difficulty[/b]
 
-Shorter, deadly fights with a little more room for mistakes. By default, enemies have 25% less health than Fair, deal Fair damage, and your combat actions cost Fair stamina. Enemy aggression keeps the Duelist feel.
+Modifies the existing Duelist preset in The Blood of Dawnwalker.
+Select Fair Duelist in the game's difficulty settings. This is the renamed Duelist slot, not a fifth preset.
 
-The existing Duelist option is renamed [b]Fair Duelist[/b]. You can keep this setup or adjust it to your taste.
+[url=https://github.com/my-mods/Fair-Duelist-Customizable-Difficulty/raw/refs/heads/main/Fair-Duelist-Customizable-Difficulty.zip]Download the Vortex archive[/url]
 
-[b]How do I change my difficulty settings?[/b]
-[list=1]
-[*]Install [url=https://github.com/UE4SS-RE/RE-UE4SS/releases]UE4SS[/url] and this mod, then launch the game once.[/*]
-[*]Press [b]Win + R[/b], paste the path below, and press Enter. Open the file in Notepad.[/*]
-[/list]
-[code]%LOCALAPPDATA%\Dawnwalker\Saved\Config\FairDuelist.ini[/code]
-Remove the [b];[/b] at the start of a setting to enable your change, then edit its value. Save the file and restart the game. Keep both [b]RPG Difficulty[/b] and [b]Action Difficulty[/b] set to [b]Fair Duelist[/b].
+Enemy health: 75% of Fair (25% less health).
+Enemy damage: Fair (100%, reduced from Duelist 160%).
+Player combat stamina costs: Fair (100%, reduced from Duelist 175%).
+Enemy attack pressure: configurable relative to the chosen reference; defaults to Duelist. Animation speed, parry timing and directional indicators remain controlled by the game.
 
-[list]
-[*][b]referenceDifficulty[/b] — choose Story, Fair, Challenging, or Duelist as your starting point.[/*]
-[*][b]enemyHealthMultiplier[/b] — lower it to kill enemies in fewer hits.[/*]
-[*][b]enemyDamageMultiplier[/b] — lower it to take less damage.[/*]
-[*][b]staminaCostMultiplier[/b] — lower it to spend less stamina on combat actions.[/*]
-[*][b]enemyAggressionMultiplier[/b] — lower it to give enemies longer waits between attacks.[/*]
-[/list]
-[b]1.0[/b] uses your chosen difficulty's value. [b]0.75[/b] means 25% less health, damage or stamina cost. For aggression, 0.75 makes attack cooldowns about 33% longer. Values can range from 0.1 to 5.0.
+Customization: keep RPG Difficulty on Fair Duelist to retain your INI balance (defaults: enemy health 75%, damage 100%, and combat stamina costs 100%). Changing Action Difficulty changes attack speed, aggression and parry timing, but does not change the RPG values. Indicators, consumables and other custom options can be changed independently. The overall preset may display Custom; that alone does not remove the RPG changes. Selecting another RPG difficulty or overall preset changes the balance accordingly. For the exact intended setup, keep Action Difficulty on Fair Duelist and directional indicators off.
+Other presets and player maximum health are unchanged.
 
-For example, choose [b]Fair[/b], set health to [b]0.75[/b], and leave the other multipliers at [b]1.0[/b] for shorter fights with Fair damage, stamina costs and aggression. Changing the reference affects all multipliers.
+Installation: import Fair-Duelist-Customizable-Difficulty.zip into Vortex, choose the game-root installer if prompted, enable and deploy. Restart the game and select Fair Duelist.
+Requirements: The Blood of Dawnwalker; Vortex with its Dawnwalker extension. UE4SS is required for INI overrides; the packaged default preset can run without it.
+Update: replace the same Vortex mod entry with the new archive and deploy.
+Uninstall: disable/remove this mod in Vortex and deploy; restart the game.
+Conflicts: replaces /Game/_Dawnwalker/Combat/DA_DifficultyConfig, /Game/_Dawnwalker/Combat/StringTables/ST_Difficulties, and /Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game. Text mods replacing these string tables may conflict. Use only one mod replacing each of these assets; Fair Duelist - Customizable Difficulty must win for these values to apply. Archive filenames alone cannot detect this conflict.
+Compatibility: built for the PC version; conflicts are listed above.
 
-[b]Default INI values[/b]
-[code]referenceDifficulty=Duelist
-enemyHealthMultiplier=0.833333333333
-enemyDamageMultiplier=0.625
-staminaCostMultiplier=0.571428571429
-enemyAggressionMultiplier=1.0[/code]
-Settings you leave commented out use the mod's defaults. Your personal file is kept between mod updates.
+Original difficulty data belongs to Rebel Wolves and its respective rights holders. This mod changes three difficulty multipliers and the corresponding menu text.
 
-Aggression adjusts attack cooldowns and how enemies attack together. It does not remove red/unblockable attacks or change attack animations, parry timing or boss health phases. You can still change directional indicators and other options in the game's menu.
+[b]Settings[/b]
 
-[b]Requirements[/b]
-[url=https://github.com/UE4SS-RE/RE-UE4SS/releases]UE4SS[/url] develop build 97b7e501c or compatible is needed to use the INI. The default preset also works without UE4SS.
-
-[b]Install[/b]
-Install through Vortex. To update, replace the existing Fair Duelist mod with the new archive and deploy, then restart the game.
-
-[b]Compatibility and conflicts[/b]
-Do not combine this with another mod replacing the same difficulty configuration or text tables unless you have chosen which version should win. Fair Duelist must win for its balance and wording to apply.
-Affected assets:
-[list]
-[*]/Game/_Dawnwalker/Combat/DA_DifficultyConfig
-[*]/Game/_Dawnwalker/Combat/StringTables/ST_Difficulties
-[*]/Game/_Dawnwalker/System/Settings/ST_Settings_Tab_Game
-[/list]
-Difficulty overhauls and mods replacing these menu string tables can conflict, even when their archive filenames differ.
-
-[b]Credits and source[/b]
-Original game and difficulty data: Rebel Wolves and the respective rights holders. Balance choices and mod: oOCamilleOo. This is an unofficial mod.
-[url=https://github.com/my-mods/Fair-Duelist-Customizable-Difficulty]Source repository[/url]
+Use [url=https://www.nexusmods.com/thebloodofdawnwalker/mods/271]Mod Setting Menu 1.0.5 or later[/url] from the main menu. Press Apply, then fully restart the game. See SETTINGS.md (included with the mod) for all controls, first-use import and preference backups. Console settings commands are retired.
