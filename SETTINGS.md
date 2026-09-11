@@ -10,11 +10,13 @@ Missing, duplicate or invalid settings stop configuration loading and are report
 | --- | --- | --- |
 | General | Runtime difficulty overrides | Off, On |
 | Balance | Reference difficulty | Story, Fair, Challenging, Duelist |
-| Balance | Enemy health | 0.1 to 5 |
-| Balance | Enemy damage | 0.1 to 5 |
-| Balance | Combat stamina cost | 0.1 to 5 |
-| Balance | Enemy attack pressure | 0.1 to 5 |
+| Balance | Enemy health | -90% to 400% relative to the reference |
+| Balance | Enemy damage | -90% to 400% relative to the reference |
+| Balance | Combat stamina cost | -90% to 400% relative to the reference |
+| Balance | Enemy attack pressure | -90% to 400% relative to the reference |
 | Diagnostics | Debug logging | Off, On |
+
+The four balance sliders display percentage adjustments: `0%` matches the reference difficulty, `-25%` reduces its value by a quarter, and `25%` increases it by a quarter. Sliders move in one percentage point steps. Existing multiplier preferences convert automatically on the next save load without rounding; the original file is retained as `settings.ini.backup`. Display values are rounded to one decimal place. Attack pressure adjusts inverse cooldowns, not animation speed.
 
 Console commands are not used to change settings.
 
