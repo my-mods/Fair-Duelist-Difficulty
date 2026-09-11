@@ -1,5 +1,7 @@
 ## Unreleased
 
+- Restore custom difficulty settings after loads with missed loading notifications or delayed player initialization.
+
 - Replace outdated or invalid settings with current defaults before the main menu opens.
 - Use absolute percentages for enemy health, damage, stamina costs and attack delays.
 - Customize standard difficulty values selected in the game settings.
