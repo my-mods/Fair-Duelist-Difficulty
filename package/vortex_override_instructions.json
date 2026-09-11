@@ -27,7 +27,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -43,7 +44,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -59,7 +61,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -75,7 +78,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -91,7 +95,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -107,7 +112,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -123,7 +129,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -139,7 +146,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -155,7 +163,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -171,7 +180,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -187,7 +197,8 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   },
   {
@@ -203,7 +214,42 @@
       "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
       "Nexus/description.bbcode.txt",
       "Nexus/metadata.json",
-      "SETTINGS.md"
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "LICENSES/FairDuelist-ue4ss-common.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
+    ]
+  },
+  {
+    "type": "attribute",
+    "source": "LICENSES\\FairDuelist-ue4ss-common.txt",
+    "key": "fairDuelistReleaseMaterials",
+    "value": [
+      "mod.manifest",
+      "README.txt",
+      "LICENSE.txt",
+      "CHANGELOG.md",
+      "RELEASE-NOTES.md",
+      "Data/Fair-Duelist-PACKAGE-LAYOUT.txt",
+      "Nexus/description.bbcode.txt",
+      "Nexus/metadata.json",
+      "SETTINGS.md",
+      "LICENSES/FairDuelist-ue4ss-common.txt"
     ]
   }
 ]
