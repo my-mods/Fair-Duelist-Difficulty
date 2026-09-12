@@ -1,8 +1,8 @@
-[b]Fair Duelist - Customizable Difficulty[/b]
+[size=5][b][color=#E8C88A]Fair Duelist - Customizable Difficulty[/color][/b][/size]
 
 Customize enemy health, damage, combat stamina costs and enemy attack delays. Start from Story, Fair, Challenging or Duelist, then adjust individual values. You can use the optional Mod Setting Menu or edit settings.ini yourself.
 
-[b]Default values and what the percentages mean[/b]
+[size=4][b][color=#E8C88A]Default values and what the percentages mean[/color][/b][/size]
 
 On a fresh installation, load a save once before configuring the mod. When no settings.ini exists, Fair Duelist creates it from your currently selected RPG and Action difficulties. It does not automatically force the old 75%-health preset. If your RPG and Action difficulties differ, their respective values are combined.
 
@@ -10,17 +10,17 @@ On a fresh installation, load a save once before configuring the mod. When no se
 
 The six balance values are: [b]enemy health / enemy damage / combat stamina cost / normal attack delay / low-health attack delay / ranged attack delay[/b].
 [list]
-[*][b]Story:[/b] health 50%, damage 40%, stamina cost 50%; normal, low-health and ranged attack delays 200%. Attacks while another enemy blocks: Off.[/*]
-[*][b]Fair:[/b] health 100%, damage 100%, stamina cost 100%; normal delay 140%, low-health delay 120%, ranged delay 140%. Attacks while another enemy blocks: Off.[/*]
-[*][b]Challenging:[/b] health 100%, damage 130%, stamina cost 150%; normal delay 120%, low-health delay 100%, ranged delay 120%. Attacks while another enemy blocks: On.[/*]
-[*][b]Duelist:[/b] health 90%, damage 160%, stamina cost 175%; normal delay 100%, low-health delay 60%, ranged delay 100%. Attacks while another enemy blocks: On.[/*]
+[*][b][color=#A8D5C2]Story:[/color][/b] health 50%, damage 40%, stamina cost 50%; normal, low-health and ranged attack delays 200%. Attacks while another enemy blocks: Off.[/*]
+[*][b][color=#A8D5C2]Fair:[/color][/b] health 100%, damage 100%, stamina cost 100%; normal delay 140%, low-health delay 120%, ranged delay 140%. Attacks while another enemy blocks: Off.[/*]
+[*][b][color=#A8D5C2]Challenging:[/color][/b] health 100%, damage 130%, stamina cost 150%; normal delay 120%, low-health delay 100%, ranged delay 120%. Attacks while another enemy blocks: On.[/*]
+[*][b][color=#A8D5C2]Duelist:[/color][/b] health 90%, damage 160%, stamina cost 175%; normal delay 100%, low-health delay 60%, ranged delay 100%. Attacks while another enemy blocks: On.[/*]
 [/list]
-
 The balance override starts On and Logging starts Off. [b]Reset in Mod Settings uses the Duelist values above.[/b] Outdated or invalid settings files also reset to those defaults.
 
 Lower health means enemies take fewer hits; lower damage means you take less damage; lower stamina cost makes combat actions cheaper. [b]Lower attack-delay percentages let enemies attack more frequently; higher values give longer waits.[/b] Low-health and ranged delays control those specific attack cooldowns. These settings do not change attack animation speed or parry timing. The coordinated-attack switch allows an enemy to attack while another enemy is reacting to a block.
 
-[b]Change settings without Mod Setting Menu[/b]
+[size=3][b][color=#A8D5C2]Change settings without Mod Setting Menu[/color][/b][/size]
+
 [list=1]
 [*]Start the game and load a save once to create settings.ini. Then fully close the game.[/*]
 [*]Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.[/*]
@@ -42,28 +42,28 @@ lowHealthAttackDelayPercent = 60
 rangedAttackDelayPercent = 100
 attackDuringBlock = 1
 debugLogging = 0[/code]
-
 Keep settingsVersion at 2. Leave the generated difficultyPreset line in place; changing that number does not select a preset. Choose presets through the game's own difficulty settings. For the three switches, 1 means On and 0 means Off. Setting enabled to 0 disables the custom balance override. Leave debugLogging at 0 for normal play. Decimal percentages such as 73.25 are accepted.
 
 [b]Example: shorter fights with Fair damage, stamina costs and attack delays.[/b] Set enemyHealthPercent to 75, enemyDamagePercent and staminaCostPercent to 100, attackDelayPercent and rangedAttackDelayPercent to 140, lowHealthAttackDelayPercent to 120, and attackDuringBlock to 0. Keep enabled at 1. This gives enemies 25% less health than Fair.
 
 [b]Save the file, restart the game, and load a save to use your changes.[/b] Do not leave values commented out, duplicate keys, or enter values outside their ranges: an obsolete or invalid file is replaced in full with Duelist defaults.
 
-[b]Change settings with the optional Mod Setting Menu[/b]
+[size=3][b][color=#A8D5C2]Change settings with the optional Mod Setting Menu[/color][/b][/size]
 
 Load a save once, then open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save again to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
 
-[b]Choosing another difficulty[/b]
+[size=4][b][color=#E8C88A]Choosing another difficulty[/color][/b][/size]
 
 Confirming a difficulty in the game's settings replaces the corresponding custom values in settings.ini. A full preset resets all balance values; RPG Difficulty resets health, damage and stamina costs; Action Difficulty resets attack delays and attacks while another enemy blocks. Canceling an unconfirmed preview preserves your saved values. To customize a new starting preset, confirm it first, then make your edits. Other game options, including indicators and parry settings, remain controlled by the game's difficulty settings.
 
-[b]Installation[/b]
+[size=4][b][color=#E8C88A]Installation[/color][/b][/size]
+
 [list]
-[*][b]Vortex:[/b] Install Fair-Duelist-Customizable-Difficulty.zip through Vortex, enable it and deploy.[/*]
-[*][b]Manual:[/b] Copy the archive's Dawnwalker folder into ...\steamapps\common\The Blood of Dawnwalker\, preserving the folder structure.[/*]
+[*][b][color=#A8D5C2]Vortex:[/color][/b] Install Fair-Duelist-Customizable-Difficulty.zip through Vortex, enable it and deploy.
+[*][b][color=#A8D5C2]Manual:[/color][/b] Copy the archive's Dawnwalker folder into ...\steamapps\common\The Blood of Dawnwalker\, preserving the folder structure.
 [/list]
 
-[b]Credits and source[/b]
+[size=4][b][color=#E8C88A]Credits and source[/color][/b][/size]
 
 Original game and difficulty data: Rebel Wolves and the respective rights holders. Balance choices and mod: oOCamilleOo. This is an unofficial mod. Includes pinned MIT-licensed [url=https://github.com/my-mods/ue4ss-common]ue4ss-common[/url] helpers; no separate shared-library installation is required.
 [url=https://github.com/my-mods/Fair-Duelist-Customizable-Difficulty]Source repository[/url]
