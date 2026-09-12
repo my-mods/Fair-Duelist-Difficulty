@@ -57,9 +57,11 @@ Load a save once, then open Mod Settings > Fair Duelist - Customizable Difficult
 
 Confirming a difficulty in the game's settings replaces the corresponding custom values in settings.ini. A full preset resets all balance values; RPG Difficulty resets health, damage and stamina costs; Action Difficulty resets attack delays and attacks while another enemy blocks. Canceling an unconfirmed preview preserves your saved values. To customize a new starting preset, confirm it first, then make your edits. Other game options, including indicators and parry settings, remain controlled by the game's difficulty settings.
 
-[b]Manual Install[/b]
-
-Close the game. If an older version was installed through Vortex, remove it through Vortex first and deploy. For a previous manual asset-based install, remove its zzz_FairDuelist_P.pak, .ucas and .utoc files from Dawnwalker\Content\Paks\~mods. Copy the new archive's Dawnwalker folder into the game's installation folder, merging with the existing Dawnwalker folder. The final runtime folder is Dawnwalker\Binaries\Win64\ue4ss\Mods\FairDuelist. Restart and load a save, then follow either settings method above.
+[b]Installation[/b]
+[list]
+[*][b]Vortex:[/b] Install Fair-Duelist-Customizable-Difficulty.zip through Vortex, enable it and deploy.[/*]
+[*][b]Manual:[/b] Copy the archive's Dawnwalker folder into ...\steamapps\common\The Blood of Dawnwalker\, preserving the folder structure.[/*]
+[/list]
 
 [b]Credits and source[/b]
 
