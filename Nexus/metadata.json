@@ -1,7 +1,7 @@
 {
   "name": "Fair Duelist - Customizable Difficulty",
   "version": "1.2.0",
-  "summary": "Customize enemy health, damage, stamina costs and attack delays with absolute percentages. Start from the game's selected difficulty, then edit settings.ini or use the optional Mod Setting Menu. Requires UE4SS.",
+  "summary": "Customize enemy health, damage, stamina costs and attack delays with absolute percentages. Start from the game's selected difficulty, then edit settings.ini or use the optional Mod Setting Menu.",
   "game": "The Blood of Dawnwalker",
   "gameDomain": "thebloodofdawnwalker",
   "category": "Gameplay",

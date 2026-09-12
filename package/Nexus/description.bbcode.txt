@@ -2,12 +2,6 @@
 
 Customize enemy health, damage, combat stamina costs and enemy attack delays. Start from Story, Fair, Challenging or Duelist, then adjust individual values. You can use the optional Mod Setting Menu or edit settings.ini yourself.
 
-[b]Requirements[/b]
-[list]
-[*][b]Required: [url=https://www.nexusmods.com/thebloodofdawnwalker/mods/283]UE4SS for BoD[/url].[/b] Install a version compatible with your game build. This version of Fair Duelist uses Lua for all balance changes.[/*]
-[*][b]Optional: [url=https://www.nexusmods.com/thebloodofdawnwalker/mods/271]Mod Setting Menu 1.0.5.1 or later[/url].[/b] Adds in-game controls for the same settings.ini file. Fair Duelist works without it.[/*]
-[/list]
-
 [b]Default values and what the percentages mean[/b]
 
 On a fresh installation, load a save once before configuring the mod. When no settings.ini exists, Fair Duelist creates it from your currently selected RPG and Action difficulties. It does not automatically force the old 75%-health preset. If your RPG and Action difficulties differ, their respective values are combined.
@@ -28,7 +22,7 @@ Lower health means enemies take fewer hits; lower damage means you take less dam
 
 [b]Change settings without Mod Setting Menu[/b]
 [list=1]
-[*]Install UE4SS and Fair Duelist, start the game, and load a save once to create settings.ini. Then fully close the game.[/*]
+[*]Start the game and load a save once to create settings.ini. Then fully close the game.[/*]
 [*]Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.[/*]
 [*]Open the file below with Notepad. Back it up before editing.[/*]
 [/list]
@@ -63,23 +57,9 @@ Load a save once, then open Mod Settings > Fair Duelist - Customizable Difficult
 
 Confirming a difficulty in the game's settings replaces the corresponding custom values in settings.ini. A full preset resets all balance values; RPG Difficulty resets health, damage and stamina costs; Action Difficulty resets attack delays and attacks while another enemy blocks. Canceling an unconfirmed preview preserves your saved values. To customize a new starting preset, confirm it first, then make your edits. Other game options, including indicators and parry settings, remain controlled by the game's difficulty settings.
 
-[b]Install and update through Vortex[/b]
-
-Close the game and back up your settings. Replace/reinstall the existing Fair Duelist entry using Fair-Duelist-Customizable-Difficulty.zip. When updating from the old asset-based version, disable it and deploy first so Vortex removes zzz_FairDuelist_P.pak, .ucas and .utoc. If updating from a development build that replaced a shared menu file, disable and deploy it first to restore the original menu file. Install the replacement ZIP, deploy, and restart. Keep only one Fair Duelist entry active. Redeployment alone does not update an old archive's installation layout.
-
-The old personal FairDuelist.ini is no longer imported. Existing valid absolute settings are retained; percentages above the new 500% cap are reduced to 500%, with the original saved as settings.ini.before-500-percent. Obsolete or invalid settings.ini files are replaced in full with Duelist defaults. Keep a preference backup if you want to re-enter old choices manually.
-
 [b]Manual Install[/b]
 
 Close the game. If an older version was installed through Vortex, remove it through Vortex first and deploy. For a previous manual asset-based install, remove its zzz_FairDuelist_P.pak, .ucas and .utoc files from Dawnwalker\Content\Paks\~mods. Copy the new archive's Dawnwalker folder into the game's installation folder, merging with the existing Dawnwalker folder. The final runtime folder is Dawnwalker\Binaries\Win64\ue4ss\Mods\FairDuelist. Restart and load a save, then follow either settings method above.
-
-[b]Uninstall[/b]
-
-Close the game and back up generated settings.ini. Disable/remove Fair Duelist in Vortex and deploy. For a manual installation, remove the FairDuelist runtime folder. Restart the game.
-
-[b]Compatibility and conflicts[/b]
-
-This version does not replace cooked difficulty assets, game string tables or Mod Setting Menu files. Other mods writing the same runtime balance fields can conflict. Animation speed, parry windows and other native game options follow the game's settings. Logging writes to Dawnwalker\Binaries\Win64\ue4ss\UE4SS.log.
 
 [b]Credits and source[/b]
 
