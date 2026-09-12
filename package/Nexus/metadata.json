@@ -1,7 +1,7 @@
 {
   "name": "Fair Duelist - Customizable Difficulty",
-  "version": "1.1.0",
-  "summary": "Customize absolute enemy health, damage, stamina costs and attack delays. Confirming a difficulty in the game settings loads its standard values for further customization.",
+  "version": "1.2.0",
+  "summary": "Customize enemy health, damage, stamina costs and attack delays with absolute percentages. Start from the game's selected difficulty, then edit settings.ini or use the optional Mod Setting Menu. Requires UE4SS.",
   "game": "The Blood of Dawnwalker",
   "gameDomain": "thebloodofdawnwalker",
   "category": "Gameplay",
@@ -16,16 +16,35 @@
   "file": {
     "displayName": "Fair Duelist - Customizable Difficulty",
     "filename": "Fair-Duelist-Customizable-Difficulty.zip",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "category": "main",
-    "description": "Absolute percentage controls. Start from a difficulty chosen in the game settings, then customize individual values without replacing Mod Setting Menu files.",
+    "description": "Customize absolute difficulty percentages with optional Mod Setting Menu controls or manual settings.ini editing. Includes native difficulty synchronization and save-load recovery.",
     "allowModManagerDownload": true,
     "primaryModManagerDownload": true
   },
   "changelog": [
-    "Reduce default enemy health from 90% to 75% of Fair and update the difficulty descriptions.",
-    "Add personal INI settings for enemy health, damage, stamina costs and aggression.",
-    "Choose Story, Fair, Challenging or Duelist as the starting point for numeric adjustments.",
-    "Add clear INI instructions and examples."
+    "Add optional Mod Setting Menu controls alongside manual settings.ini editing.",
+    "Use absolute percentages for enemy health, damage, stamina costs and three attack-delay controls, with 0% to 500% ranges and 5-point menu steps.",
+    "Add a separate option for attacks while another enemy blocks.",
+    "Load standard balance values when a difficulty is confirmed in the game settings; preserve custom balance when a preview is canceled.",
+    "Keep the original game difficulty names and remove cooked difficulty replacements and shared menu overrides.",
+    "Restore custom balance after save loads with missed loading notifications or delayed player initialization.",
+    "Reset obsolete or invalid settings to current defaults and simplify diagnostics to one Logging switch."
+  ],
+  "requiresModSettingMenu": false,
+  "requirements": [
+    {
+      "name": "UE4SS for BoD",
+      "optional": false,
+      "notes": "Required for all balance changes; use a build compatible with your game.",
+      "url": "https://www.nexusmods.com/thebloodofdawnwalker/mods/283"
+    },
+    {
+      "name": "Mod Setting Menu",
+      "url": "https://www.nexusmods.com/thebloodofdawnwalker/mods/271",
+      "minimumVersion": "1.0.5.1",
+      "optional": true,
+      "notes": "Optional in-game settings UI. You can edit FairDuelist/settings.ini without it."
+    }
   ]
 }

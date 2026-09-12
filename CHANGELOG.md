@@ -1,16 +1,12 @@
-## Unreleased
+# 1.2.0
 
-- Restore custom difficulty settings after loads with missed loading notifications or delayed player initialization.
-
-- Replace outdated or invalid settings with current defaults before the main menu opens.
-- Use absolute percentages for enemy health, damage, stamina costs and attack delays.
-- Customize standard difficulty values selected in the game settings.
-- Use the original Mod Setting Menu without a shared file override or additional preset selector.
-- Reset the corresponding custom values when a native difficulty change is confirmed.
-- Restore the game's original difficulty names and remove the packaged preset replacements.
-- Reset obsolete settings to the current defaults.
-
-- Simplify diagnostics to a single Logging switch at the end of Mod Settings.
+- Add optional Mod Setting Menu controls alongside manual settings.ini editing.
+- Use absolute percentages for enemy health, damage, stamina costs and three attack-delay controls, with 0% to 500% ranges and 5-point menu steps.
+- Add a separate option for attacks while another enemy blocks.
+- Load standard balance values when a difficulty is confirmed in the game settings; preserve custom balance when a preview is canceled.
+- Keep the original game difficulty names and remove cooked difficulty replacements and shared menu overrides.
+- Restore custom balance after save loads with missed loading notifications or delayed player initialization.
+- Reset obsolete or invalid settings to current defaults and simplify diagnostics to one Logging switch.
 
 # 1.1.0
 
