@@ -12,7 +12,7 @@ Customize enemy health, damage, combat stamina costs and enemy attack delays. St
 
 **Default values and what the percentages mean**
 
-On a fresh installation, Fair Duelist creates settings.ini during startup as soon as the game's difficulty settings are ready, so you can configure it from the main menu before loading a save. The initial values match your selected RPG and Action difficulties. If those difficulties differ, their respective values are combined. Gameplay applies your saved choices when you load a save.
+Your initial balance values match the game's selected RPG and Action difficulties. If those difficulties differ, their respective values are combined. Adjust the values to your liking, then load a save to apply your changes.
 
 **100%** means the unscaled game value, **50%** means half, and **150%** means one and a half times. These percentages are absolute, not additional multipliers on top of the selected difficulty. All six percentage settings accept values from **0 to 500**. Enter 75 for 75%, not 0.75 or 75%.
 
@@ -30,7 +30,7 @@ Lower health means enemies take fewer hits; lower damage means you take less dam
 
 **Change settings without Mod Setting Menu**
 
-- Install UE4SS and Fair Duelist, start the game, and wait for the main menu to create settings.ini. Then fully close the game.
+- Start the game and reach the main menu, then fully close it.
 - Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.
 - Open the file below with Notepad. Back it up before editing.
 

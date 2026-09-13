@@ -1,6 +1,6 @@
-Fair Duelist - Customizable Difficulty — Pending changes
+Fair Duelist - Customizable Difficulty 1.2.1
 
-- Create settings.ini from the selected difficulty during startup so Mod Settings works before the first save load.
+- Fix unavailable settings when opening Mod Settings before loading a save.
 
 Fair Duelist - Customizable Difficulty 1.2.0
 
