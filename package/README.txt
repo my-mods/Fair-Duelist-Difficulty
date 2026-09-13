@@ -30,7 +30,7 @@ Lower health means enemies take fewer hits; lower damage means you take less dam
 
 Change settings without Mod Setting Menu
 
-- Start the game and reach the main menu, then fully close it.
+- Close the game before editing settings.ini.
 - Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.
 - Open the file below with Notepad. Back it up before editing.
 
