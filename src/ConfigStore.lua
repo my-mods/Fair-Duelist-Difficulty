@@ -72,7 +72,7 @@ function M.load(directory, Config, initial)
     return values,path,Store.read(path)
 end
 -- Make existing preferences readable by the main-menu UI before a save loads.
--- Fresh installs still initialize from the game's selected difficulty on save load.
+-- Fresh installs are initialized separately once native settings are readable.
 function M.prepare(directory, Config)
     local Store=dofile(directory..'SettingsStore.lua')
     local text,err,code=Store.read(Store.path(directory))

@@ -4,7 +4,7 @@ Customize enemy health, damage, combat stamina costs and enemy attack delays. St
 
 [size=4][b][color=#E8C88A]Default values and what the percentages mean[/color][/b][/size]
 
-On a fresh installation, load a save once before configuring the mod. When no settings.ini exists, Fair Duelist creates it from your currently selected RPG and Action difficulties. It does not automatically force the old 75%-health preset. If your RPG and Action difficulties differ, their respective values are combined.
+On a fresh installation, Fair Duelist creates settings.ini during startup as soon as the game's difficulty settings are ready, so you can configure it from the main menu before loading a save. The initial values match your selected RPG and Action difficulties. If those difficulties differ, their respective values are combined. Gameplay applies your saved choices when you load a save.
 
 [b]100%[/b] means the unscaled game value, [b]50%[/b] means half, and [b]150%[/b] means one and a half times. These percentages are absolute, not additional multipliers on top of the selected difficulty. All six percentage settings accept values from [b]0 to 500[/b]. Enter 75 for 75%, not 0.75 or 75%.
 
@@ -22,7 +22,7 @@ Lower health means enemies take fewer hits; lower damage means you take less dam
 [size=3][b][color=#A8D5C2]Change settings without Mod Setting Menu[/color][/b][/size]
 
 [list=1]
-[*]Start the game and load a save once to create settings.ini. Then fully close the game.[/*]
+[*]Start the game and wait for the main menu to create settings.ini. Then fully close the game.[/*]
 [*]Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.[/*]
 [*]Open the file below with Notepad. Back it up before editing.[/*]
 [/list]
@@ -50,7 +50,7 @@ Keep settingsVersion at 2. Leave the generated difficultyPreset line in place; c
 
 [size=3][b][color=#A8D5C2]Change settings with the optional Mod Setting Menu[/color][/b][/size]
 
-Load a save once, then open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save again to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
+From the main menu, open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
 
 [size=4][b][color=#E8C88A]Choosing another difficulty[/color][/b][/size]
 

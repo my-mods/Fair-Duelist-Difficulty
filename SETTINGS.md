@@ -4,7 +4,7 @@ Mod Setting Menu is optional. UE4SS is required.
 
 **Default values and what the percentages mean**
 
-On a fresh installation, load a save once before configuring the mod. When no settings.ini exists, Fair Duelist creates it from your currently selected RPG and Action difficulties. It does not automatically force the old 75%-health preset. If your RPG and Action difficulties differ, their respective values are combined.
+On a fresh installation, Fair Duelist creates settings.ini during startup as soon as the game's difficulty settings are ready, so you can configure it from the main menu before loading a save. The initial values match your selected RPG and Action difficulties. If those difficulties differ, their respective values are combined. Gameplay applies your saved choices when you load a save.
 
 **100%** means the unscaled game value, **50%** means half, and **150%** means one and a half times. These percentages are absolute, not additional multipliers on top of the selected difficulty. All six percentage settings accept values from **0 to 500**. Enter 75 for 75%, not 0.75 or 75%.
 
@@ -22,7 +22,7 @@ Lower health means enemies take fewer hits; lower damage means you take less dam
 
 **Change settings without Mod Setting Menu**
 
-- Install UE4SS and Fair Duelist, start the game, and load a save once to create settings.ini. Then fully close the game.
+- Install UE4SS and Fair Duelist, start the game, and wait for the main menu to create settings.ini. Then fully close the game.
 - Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.
 - Open the file below with Notepad. Back it up before editing.
 
@@ -59,7 +59,7 @@ Keep settingsVersion at 2. Leave the generated difficultyPreset line in place; c
 
 **Change settings with the optional Mod Setting Menu**
 
-Load a save once, then open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save again to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
+From the main menu, open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
 
 **Choosing another difficulty**
 
@@ -71,7 +71,7 @@ The stable menu ID is `oOCamilleOo_FairDuelist`; the runtime folder remains `Fai
 
 When updating valid absolute settings from the previous wider ranges, only percentages above 500% are reduced to 500%. Other preferences, comments and unrelated entries are retained, and the original is saved as `settings.ini.before-500-percent`. If that backup or its `.new` transaction file is unresolved, preserve it and recover the settings file before retrying.
 
-At startup, outdated or invalid settings.ini files are replaced in full with current Duelist defaults. Old multipliers and personal INI values are not imported. Valid current settings are retained. Back up preferences before updating if you want to keep a reference. New installations initialize from the currently selected native RPG and Action difficulties on first save load.
+At startup, outdated or invalid settings.ini files are replaced in full with current Duelist defaults. Old multipliers and personal INI values are not imported. Valid current settings are retained. Back up preferences before updating if you want to keep a reference. New installations initialize from the currently selected native RPG and Action difficulties during startup. Native reads are deferred to a game-thread callback. Readiness uses at most 40 attempts over about 10 seconds, with no INI reads during retries; it stops on success or exhaustion. Main menu creation can start a new readiness window after exhaustion. Save loading retains its existing initialization fallback. No placeholder values are written when native settings are unavailable.
 
 Back up your generated preferences before reinstalling or uninstalling. Do not overwrite an absolute settings file with an old INI. If a settings file cannot be safely read or replaced, custom overrides stay disabled and the failure is reported in `Dawnwalker/Binaries/Win64/ue4ss/UE4SS.log`.
 

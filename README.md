@@ -12,7 +12,7 @@ Customize enemy health, damage, combat stamina costs and enemy attack delays. St
 
 **Default values and what the percentages mean**
 
-On a fresh installation, load a save once before configuring the mod. When no settings.ini exists, Fair Duelist creates it from your currently selected RPG and Action difficulties. It does not automatically force the old 75%-health preset. If your RPG and Action difficulties differ, their respective values are combined.
+On a fresh installation, Fair Duelist creates settings.ini during startup as soon as the game's difficulty settings are ready, so you can configure it from the main menu before loading a save. The initial values match your selected RPG and Action difficulties. If those difficulties differ, their respective values are combined. Gameplay applies your saved choices when you load a save.
 
 **100%** means the unscaled game value, **50%** means half, and **150%** means one and a half times. These percentages are absolute, not additional multipliers on top of the selected difficulty. All six percentage settings accept values from **0 to 500**. Enter 75 for 75%, not 0.75 or 75%.
 
@@ -30,7 +30,7 @@ Lower health means enemies take fewer hits; lower damage means you take less dam
 
 **Change settings without Mod Setting Menu**
 
-- Install UE4SS and Fair Duelist, start the game, and load a save once to create settings.ini. Then fully close the game.
+- Install UE4SS and Fair Duelist, start the game, and wait for the main menu to create settings.ini. Then fully close the game.
 - Open the game's installation folder. In Steam, right-click the game, then choose Manage > Browse local files.
 - Open the file below with Notepad. Back it up before editing.
 
@@ -67,29 +67,20 @@ Keep settingsVersion at 2. Leave the generated difficultyPreset line in place; c
 
 **Change settings with the optional Mod Setting Menu**
 
-Load a save once, then open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save again to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
+From the main menu, open Mod Settings > Fair Duelist - Customizable Difficulty. Adjust the controls, press Apply, and load a save to apply that snapshot to gameplay. Percentage sliders move in 5-point steps. Restore discards unapplied changes; Reset loads Duelist defaults. Logging is the final control.
 
 **Choosing another difficulty**
 
 Confirming a difficulty in the game's settings replaces the corresponding custom values in settings.ini. A full preset resets all balance values; RPG Difficulty resets health, damage and stamina costs; Action Difficulty resets attack delays and attacks while another enemy blocks. Canceling an unconfirmed preview preserves your saved values. To customize a new starting preset, confirm it first, then make your edits. Other game options, including indicators and parry settings, remain controlled by the game's difficulty settings.
 
-**Install and update through Vortex**
+**Installation**
 
-Close the game and back up your settings. Replace/reinstall the existing Fair Duelist entry using Fair-Duelist-Customizable-Difficulty.zip. When updating from the old asset-based version, disable it and deploy first so Vortex removes zzz_FairDuelist_P.pak, .ucas and .utoc. If updating from a development build that replaced a shared menu file, disable and deploy it first to restore the original menu file. Install the replacement ZIP, deploy, and restart. Keep only one Fair Duelist entry active. Redeployment alone does not update an old archive's installation layout.
+- **Vortex:** Install Fair-Duelist-Customizable-Difficulty.zip through Vortex, enable it and deploy.
+- **Manual:** Copy the archive's Dawnwalker folder into ...\steamapps\common\The Blood of Dawnwalker\, preserving the folder structure.
 
-The old personal FairDuelist.ini is no longer imported. Existing valid absolute settings are retained; percentages above the new 500% cap are reduced to 500%, with the original saved as settings.ini.before-500-percent. Obsolete or invalid settings.ini files are replaced in full with Duelist defaults. Keep a preference backup if you want to re-enter old choices manually.
+**Logging**
 
-**Manual Install**
-
-Close the game. If an older version was installed through Vortex, remove it through Vortex first and deploy. For a previous manual asset-based install, remove its zzz_FairDuelist_P.pak, .ucas and .utoc files from Dawnwalker\Content\Paks\~mods. Copy the new archive's Dawnwalker folder into the game's installation folder, merging with the existing Dawnwalker folder. The final runtime folder is Dawnwalker\Binaries\Win64\ue4ss\Mods\FairDuelist. Restart and load a save, then follow either settings method above.
-
-**Uninstall**
-
-Close the game and back up generated settings.ini. Disable/remove Fair Duelist in Vortex and deploy. For a manual installation, remove the FairDuelist runtime folder. Restart the game.
-
-**Compatibility and conflicts**
-
-This version does not replace cooked difficulty assets, game string tables or Mod Setting Menu files. Other mods writing the same runtime balance fields can conflict. Animation speed, parry windows and other native game options follow the game's settings. Logging writes to Dawnwalker\Binaries\Win64\ue4ss\UE4SS.log.
+Logging is the final menu control. Leave it Off for normal play; On writes troubleshooting details to Dawnwalker\Binaries\Win64\ue4ss\UE4SS.log.
 
 **Credits and source**
 

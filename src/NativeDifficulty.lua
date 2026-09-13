@@ -19,12 +19,67 @@ function M.new(api, directory, report)
         assert(type(r)=='number' and r%1==0 and r>=0 and r<=3 and type(a)=='number' and a%1==0 and a>=0 and a<=3,'Invalid current difficulty')
         return r,a
     end
-    function bridge.observe()
-        if not valid(factory) then factory=api.StaticFindObject('/Script/RebelSettings.Default__RebelGameUserSettings') end
+    local function settingsObject(window)
+        if not valid(factory) then
+            -- Cache absence within each finite startup/menu readiness window.
+            assert(not window or not window.lookup, 'Game settings factory unavailable')
+            if window then window.lookup=true end
+            factory=api.StaticFindObject('/Script/RebelSettings.Default__RebelGameUserSettings')
+        end
         assert(valid(factory),'Game settings factory unavailable')
         local settings=factory:Get(); assert(valid(settings),'Game settings unavailable')
-        local r,a=levels(settings)
-        return r,a
+        return settings
+    end
+    function bridge.observe()
+        return levels(settingsObject())
+    end
+    function bridge.prepareSettings()
+        -- Only fresh installs enter this path. Never read game objects in a
+        -- construction callback or create placeholder balance preferences.
+        local done,window,reported=false,nil,false
+        local function wake()
+            if done then return end
+            if window then window.lookup=false; return end
+            local job={attempts=0}
+            window=job
+            local function step()
+                job.attempts=job.attempts+1
+                local ok,r,a=pcall(function()
+                    local settings=settingsObject(job)
+                    assert(not settings:IsSettingUnconfirmed(69) and not settings:IsSettingUnconfirmed(70),
+                        'Waiting for confirmed difficulty settings')
+                    return levels(settings)
+                end)
+                if not ok then
+                    if job.attempts<40 then api.ExecuteInGameThreadWithDelay(250,step); return end
+                    window=nil
+                    if not reported then
+                        reported=true
+                        report('Initial settings deferred until the main menu or save load: '..tostring(r))
+                    end
+                    return
+                end
+                -- Read/write the INI once, after readiness. A file created by
+                -- a save load or another writer meanwhile takes precedence.
+                done=true; window=nil
+                local saved,cfg,path,original=pcall(Store.load,directory,Config,function()
+                    local initial=Config.defaults()
+                    Config.preset(initial,r,'RPG'); Config.preset(initial,a,'Action')
+                    return initial
+                end)
+                if not saved then report('Initial settings creation failed: '..tostring(cfg))
+                elseif original and cfg.debugLogging==1 then
+                    report(string.format('Menu settings ready; attempts=%d settings=%s',job.attempts,path))
+                end
+            end
+            api.ExecuteInGameThreadWithDelay(16,step)
+        end
+        -- Main menu creation also recovers a startup window that exhausted
+        -- before engine settings were available. Event bursts share one job.
+        local ok,err=pcall(api.NotifyOnNewObject,
+            '/Game/_Dawnwalker/UI/_Unified/MainMenu/WBP_MainMenu.WBP_MainMenu_C',wake)
+        if not ok then report('Main menu settings recovery unavailable: '..tostring(err)) end
+        wake()
     end
     function bridge.attach(callback)
         binding=callback

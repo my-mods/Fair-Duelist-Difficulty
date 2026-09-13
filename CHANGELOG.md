@@ -1,3 +1,7 @@
+# Unreleased
+
+- Create settings.ini from the selected difficulty during startup so Mod Settings works before the first save load.
+
 # 1.2.0
 
 - Add optional Mod Setting Menu controls alongside manual settings.ini editing.
